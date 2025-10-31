@@ -122,31 +122,31 @@ export const partners: Partner[] = [
 export const faqs: FAQ[] = [
   {
     question: "How do I add money to my account?",
-    answer: "Use our partner networks like Fonbnk, Yellow Card, Quidax, or Transfi to deposit via bank transfer, mobile money (M-Pesa, MTN Momo), or cards. Your local currency is converted to digital dollars automatically when you deposit through our partners.",
+    answer: "Use our partner networks like Fonbnk, Yellow Card, Quidax, or Transfi to deposit via bank transfer, mobile money (M-Pesa, MTN Momo), or cards. Your local currency is converted to stablecoin (digital dollar on blockchain) automatically when you deposit through our partners.",
   },
   {
     question: "Which digital currencies are supported?",
-    answer: "Currently, we support Digital Dollar (cUSD) which maintains stable value pegged to the US Dollar. Additional digital currencies for Kenya Shilling, Euro, Nigerian Naira, South African Rand, and Ghanaian Cedis are coming soon.",
+    answer: "Currently, we support stablecoin (cUSD) which maintains stable value pegged to the US Dollar. Additional local stablecoins such as Kenya Shilling (cKES), Euro (cEUR), Nigerian Naira (cNGN), South African Rand (cZAR), and Ghanaian Cedis (cGHS) are coming soon. All from Mento labs",
   },
   {
     question: "How do I withdraw to my local bank?",
-    answer: "Convert your digital currency back to local currency through our partners. Withdraw directly to your bank account, mobile money wallet, or digital wallet. All withdrawals are instant and free.",
+    answer: "Convert your digital currency (stablecoin) back to local currency through our partners. Withdraw directly to your bank account, mobile money wallet, or digital wallet. All withdrawals are instant and free.",
   },
   {
     question: "Are there any fees?",
-    answer: "CirclePot charges minimal fees: 0.2% platform fee on member payouts (circle creators pay 0%), $0.50 for making circles public, and small penalties for early goal withdrawals. Partner deposit/withdrawal fees apply (typically 1-3%). All transaction fees are free - you pay zero fees.",
+    answer: "CirclePot charges minimal fees: 0.2% platform fee on member payouts (circle creators pay 0%), $0.50 fixed fee for making circles public, and small penalties for early goal withdrawals. All smart contract interactions are free.",
   },
   {
     question: "Is my money safe?",
-    answer: "Yes! We use secure digital wallets that you control completely. Automated systems handle circle operations with full transparency. Recovery is easy through email/phone - no complex passwords to remember.",
+    answer: "Yes! We use secure smart contract wallets that you control completely. Automated systems handle circle operations with full transparency. Recovery is easy through email/phone - no complex passwords to remember.",
   },
   {
     question: "Which countries are supported?",
-    answer: "We support 35+ local currencies including NGN, KES, GHS, ZAR, USD, EUR, GBP, CAD, XAF, INR and more through our global partner network. More digital currencies are coming soon.",
+    answer: "We support 35+ local currencies including NGN, KES, GHS, ZAR, USD, EUR, GBP, CAD, XAF, INR and more through our global partner network.",
   },
   {
     question: "How does the app work?",
-    answer: "CirclePot works like any normal savings app. Sign up with email or social media, no complex setup needed. All transactions are automatic and free. You maintain full control of your funds while enjoying simple, familiar banking.",
+    answer: "CirclePot works like any normal savings app. Sign up with email or google, no complex setup needed. All transactions are almost automatic and free. You maintain full control of your funds while enjoying simple, familiar banking.",
   },
   {
     question: "What happens if I miss a payment?",
