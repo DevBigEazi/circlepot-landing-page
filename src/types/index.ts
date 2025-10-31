@@ -1,7 +1,8 @@
 export interface Currency {
   name: string;
   symbol: string;
-  flag: string;
+  flag?: string;
+  icon?: string;
   banks: string[];
   mentoToken: string;
 }

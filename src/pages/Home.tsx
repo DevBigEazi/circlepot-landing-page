@@ -9,6 +9,7 @@ import { PartnersSection } from '../components/PartnersSection';
 import { FAQSection } from '../components/FAQSection';
 import { TechnicalOverview } from '../components/TechnicalOverview';
 import { CTASection } from '../components/CTASection';
+import { CurrenciesSection } from '../components/CurrenciesSection';
 
 
 export const Home: React.FC = () => {
@@ -71,6 +72,7 @@ export const Home: React.FC = () => {
       <HowItWorks colors={colors} />
       <FeaturesShowcase colors={colors} currentCurrency={currentCurrency} />
       <PartnersSection colors={colors} />
+      <CurrenciesSection colors={colors}/>
       <FAQSection colors={colors} openFaq={openFaq} setOpenFaq={setOpenFaq} />
       <TechnicalOverview colors={colors} />
       <CTASection colors={colors} />
