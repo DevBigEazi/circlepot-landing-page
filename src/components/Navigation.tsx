@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import appLogo from '../assets/app-logo.png';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { useTheme } from '../context/ThemeContext';
+import { WaitlistModal } from './WaitlistModal';
 
 export const Navigation: React.FC = () => {
   const { colors, isDark, toggleTheme } = useTheme();
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-lg border-b shadow-sm" style={{ backgroundColor: `${colors.surface}F2`, borderColor: colors.border }}>
@@ -34,11 +36,17 @@ export const Navigation: React.FC = () => {
             </button>
             
             <button 
+              onClick={() => setIsWaitlistOpen(true)}
               className="px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 text-white animate-pulse-slow"
               style={{ backgroundColor: colors.primary }}
             >
-              <a href="http://" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+              Join Waitlist
             </button>
+            
+            <WaitlistModal 
+              isOpen={isWaitlistOpen} 
+              onClose={() => setIsWaitlistOpen(false)} 
+            />
           </div>
         </div>
       </div>
