@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useThemeColors } from '../hooks/useThemeColors';
 import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
-import { currencies } from '../data/constant';
+import { currencies } from '../data/constants';
 import { HowItWorks } from '../components/HowItWorks';
+import { FeaturesShowcase } from '../components/FeaturesShowcase';
 
 
 export const Home: React.FC = () => {
@@ -63,6 +64,8 @@ export const Home: React.FC = () => {
         currentCurrency={currentCurrency}
       />
       <HowItWorks colors={colors} />
+      <FeaturesShowcase colors={colors} currentCurrency={currentCurrency} />
+      
     </div>
   );
 };

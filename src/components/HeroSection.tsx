@@ -1,7 +1,7 @@
 import React from 'react';
 import { Zap, Users, TrendingUp, Globe } from 'lucide-react';
 import type { ThemeColors, Currency } from '../types/index';
-import { currencies } from '../data/constant';
+import { currencies } from '../data/constants';
 
 interface HeroSectionProps {
   colors: ThemeColors;
