@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useThemeColors } from '../hooks/useThemeColors';
 import { Navigation } from '../components/Navigation';
+import { HeroSection } from '../components/HeroSection';
+import { currencies } from '../data/constant';
 
 
 export const Home: React.FC = () => {
+
+    const [selectedCurrency, setSelectedCurrency] = useState('USD');
+    
   const { colors } = useThemeColors();
+
+  const currentCurrency = currencies[selectedCurrency];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,6 +55,12 @@ export const Home: React.FC = () => {
       `}</style>
 
       <Navigation colors={colors} />
+      <HeroSection
+        colors={colors}
+        selectedCurrency={selectedCurrency}
+        setSelectedCurrency={setSelectedCurrency}
+        currentCurrency={currentCurrency}
+      />
     </div>
   );
 };

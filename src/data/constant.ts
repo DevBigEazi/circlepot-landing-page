@@ -1,6 +1,6 @@
 import type { Currency, Partner, FAQ } from '../types/index';
 
-export const currenciesLanding: Record<string, Currency> = {
+export const currencies: Record<string, Currency> = {
   NGN: {
     name: "Nigerian Naira",
     symbol: "₦",
