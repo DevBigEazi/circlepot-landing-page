@@ -6,11 +6,13 @@ import { currencies } from '../data/constants';
 import { HowItWorks } from '../components/HowItWorks';
 import { FeaturesShowcase } from '../components/FeaturesShowcase';
 import { PartnersSection } from '../components/PartnersSection';
+import { FAQSection } from '../components/FAQSection';
 
 
 export const Home: React.FC = () => {
 
     const [selectedCurrency, setSelectedCurrency] = useState('USD');
+    const [openFaq, setOpenFaq] = useState<number | null>(null);
     
   const { colors } = useThemeColors();
 
@@ -67,6 +69,7 @@ export const Home: React.FC = () => {
       <HowItWorks colors={colors} />
       <FeaturesShowcase colors={colors} currentCurrency={currentCurrency} />
       <PartnersSection colors={colors} />
+      <FAQSection colors={colors} openFaq={openFaq} setOpenFaq={setOpenFaq} />
     </div>
   );
 };
