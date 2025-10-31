@@ -28,7 +28,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full mb-6 border-2 animate-slideUp" style={{ backgroundColor: 'rgba(53, 208, 127, 0.1)', borderColor: colors.primary }}>
             <Zap size={18} style={{ color: colors.primary }} />
             <span className="font-semibold text-sm" style={{ color: colors.primary }}>
-              Secure Digital Savings • Zero Transaction Fees
+              Secure Digital Savings • Web3 Products With Web2 UX 
             </span>
           </div>
           
