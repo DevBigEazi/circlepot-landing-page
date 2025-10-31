@@ -3,6 +3,7 @@ import { useThemeColors } from '../hooks/useThemeColors';
 import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
 import { currencies } from '../data/constant';
+import { HowItWorks } from '../components/HowItWorks';
 
 
 export const Home: React.FC = () => {
@@ -61,6 +62,7 @@ export const Home: React.FC = () => {
         setSelectedCurrency={setSelectedCurrency}
         currentCurrency={currentCurrency}
       />
+      <HowItWorks colors={colors} />
     </div>
   );
 };
