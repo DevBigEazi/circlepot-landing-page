@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useThemeColors } from '../hooks/useThemeColors';
+import { useTheme } from '../context/ThemeContext';
 import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
 import { currencies } from '../data/constants';
@@ -14,11 +14,9 @@ import { Footer } from '../components/Footer';
 
 
 export const Home: React.FC = () => {
-
-    const [selectedCurrency, setSelectedCurrency] = useState('USD');
-    const [openFaq, setOpenFaq] = useState<number | null>(null);
-    
-  const { colors } = useThemeColors();
+  const [selectedCurrency, setSelectedCurrency] = useState('USD');
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { colors } = useTheme();
 
   const currentCurrency = currencies[selectedCurrency];
 
@@ -63,7 +61,7 @@ export const Home: React.FC = () => {
         .animate-on-scroll.animate-visible { opacity: 1; transform: translateY(0); }
       `}</style>
 
-      <Navigation colors={colors} />
+      <Navigation />
       <HeroSection
         colors={colors}
         selectedCurrency={selectedCurrency}
