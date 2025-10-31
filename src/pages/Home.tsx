@@ -10,6 +10,7 @@ import { FAQSection } from '../components/FAQSection';
 import { TechnicalOverview } from '../components/TechnicalOverview';
 import { CTASection } from '../components/CTASection';
 import { CurrenciesSection } from '../components/CurrenciesSection';
+import { Footer } from '../components/Footer';
 
 
 export const Home: React.FC = () => {
@@ -76,6 +77,7 @@ export const Home: React.FC = () => {
       <FAQSection colors={colors} openFaq={openFaq} setOpenFaq={setOpenFaq} />
       <TechnicalOverview colors={colors} />
       <CTASection colors={colors} />
+      <Footer colors={colors} />
     </div>
   );
 };
