@@ -22,7 +22,7 @@ export const PartnersSection: React.FC<PartnersSectionProps> = ({ colors }) => {
           {partners.map((partner, idx) => (
             <div key={idx} className="rounded-2xl p-6 border-2 hover:scale-105 hover:shadow-xl transition-all duration-300 animate-slideUp" style={{ backgroundColor: colors.surface, borderColor: colors.border, animationDelay: `${idx * 0.1}s` }}>
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: colors.primary }}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: colors.primary }}>
                   <Building className="text-white" size={24} />
                 </div>
                 <div>
