@@ -10,34 +10,38 @@ export const Navigation: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-lg border-b shadow-sm" style={{ backgroundColor: `${colors.surface}F2`, borderColor: colors.border }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: colors.primary }}>
-              <img src={appLogo} alt="CirclePot logo" height={50} width={50} />
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="flex justify-between items-center h-16 sm:h-20">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: colors.primary }}>
+              <img 
+                src={appLogo} 
+                alt="CirclePot logo" 
+                className="w-5 h-5 sm:w-6 sm:h-6"
+              />
             </div>
-            <div>
-              <span className="text-2xl font-bold" style={{ color: colors.text }}>CirclePot</span>
-              <p className="text-xs font-medium" style={{ color: colors.text, opacity: 0.7 }}>Save Together, Grow Together</p>
+            <div className="shrink-0">
+              <span className="text-xl sm:text-2xl font-bold whitespace-nowrap" style={{ color: colors.text }}>CirclePot</span>
+              <p className="text-[10px] sm:text-xs font-medium whitespace-nowrap" style={{ color: colors.text, opacity: 0.7 }}>Save Together, Grow Together</p>
             </div>
           </div>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-opacity-20 hover:bg-gray-400 transition-colors duration-200"
+              className="p-1.5 sm:p-2 rounded-full hover:bg-opacity-20 hover:bg-gray-400 transition-colors duration-200 shrink-0"
               aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
             >
               {isDark ? (
-                <FiSun className="w-5 h-5" style={{ color: colors.text }} />
+                <FiSun className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: colors.text }} />
               ) : (
-                <FiMoon className="w-5 h-5" style={{ color: colors.text }} />
+                <FiMoon className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: colors.text }} />
               )}
             </button>
             
             <button 
               onClick={() => setIsWaitlistOpen(true)}
-              className="px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 text-white animate-pulse-slow"
+              className="px-3 py-1.5 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-white animate-pulse-slow whitespace-nowrap"
               style={{ backgroundColor: colors.primary }}
             >
               Join Waitlist
