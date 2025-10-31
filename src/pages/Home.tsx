@@ -5,6 +5,7 @@ import { HeroSection } from '../components/HeroSection';
 import { currencies } from '../data/constants';
 import { HowItWorks } from '../components/HowItWorks';
 import { FeaturesShowcase } from '../components/FeaturesShowcase';
+import { PartnersSection } from '../components/PartnersSection';
 
 
 export const Home: React.FC = () => {
@@ -65,7 +66,7 @@ export const Home: React.FC = () => {
       />
       <HowItWorks colors={colors} />
       <FeaturesShowcase colors={colors} currentCurrency={currentCurrency} />
-      
+      <PartnersSection colors={colors} />
     </div>
   );
 };
