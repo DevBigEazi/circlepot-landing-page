@@ -11,8 +11,8 @@ interface FeaturesShowcaseProps {
 export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({ colors, currentCurrency }) => {
   const features = [
     { icon: Shield, title: 'Secure & Transparent', desc: 'Advanced security ensures your money is safe' },
-    { icon: Zap, title: 'Zero Transaction Fees', desc: 'We cover all transaction costs - save more' },
-    { icon: Globe, title: 'Global Access', desc: 'Save in Digital Dollars (cUSD), spend in local currency' },
+    { icon: Zap, title: 'Blockchain Account Abstraction', desc: 'We cover all transaction gas costs - save more' },
+    { icon: Globe, title: 'Global Access', desc: 'Save in Digital Stablecoins (cUSD), spend in local currency' },
     { icon: Users, title: 'Community Driven', desc: 'Join trusted circles with trust scores' }
   ];
 

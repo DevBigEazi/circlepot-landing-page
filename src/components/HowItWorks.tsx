@@ -1,5 +1,5 @@
 import React from 'react';
-import { Banknote, Coins, Users, Wallet } from 'lucide-react';
+import { Banknote, Coins, User2, Users, Wallet } from 'lucide-react';
 import type { ThemeColors } from '../types';
 
 interface HowItWorksProps {
@@ -31,10 +31,17 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
     },
     {
       step: "04",
+      title: "Create Personal Goal Saving",
+      description: "Define and track your custom savings targets",
+      icon: User2,
+      color: colors.successBorder
+    },
+    {
+      step: "05",
       title: "Withdraw Locally",
       description: "Direct to bank or mobile money",
       icon: Wallet,
-      color: colors.primary
+      color: colors.secondary
     }
   ];
 
