@@ -17,8 +17,8 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
     },
     {
       step: "02",
-      title: "Auto-Convert to Digital Dollars",
-      description: "Secure cUSD storage",
+      title: "We Auto-Convert to Digital Dollars",
+      description: "Secure cUSD conversion",
       icon: Coins,
       color: colors.secondary
     },
@@ -38,7 +38,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
     },
     {
       step: "05",
-      title: "Withdraw Locally",
+      title: "Withdraw In Your Local Currency",
       description: "Direct to bank or mobile money",
       icon: Wallet,
       color: colors.secondary
@@ -51,7 +51,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
         <div className="text-center mb-10 sm:mb-16 animate-fadeIn px-2">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4" style={{ color: colors.text }}>How It Works</h2>
           <p className="text-base sm:text-lg lg:text-xl max-w-2xl mx-auto" style={{ color: colors.text, opacity: 0.8 }}>
-            Four simple steps to start saving with CirclePot
+            Five simple steps to start saving with Circlepot
           </p>
         </div>
         

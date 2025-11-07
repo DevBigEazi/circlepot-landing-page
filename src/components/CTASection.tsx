@@ -30,7 +30,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
           <ArrowRight size={20} className="w-5 h-5" />
         </button>
         <div className="mt-6 sm:mt-8 text-white/80 text-xs sm:text-sm">
-          <span className="block sm:inline">✓ Free forever</span> • <span className="block sm:inline">35+ currencies</span> • <span className="block sm:inline">Zero fees</span>
+          <span className="block sm:inline">✓ Secure account</span> • <span className="block sm:inline">35+ currencies</span> • <span className="block sm:inline">Low maintenance fees</span>
         </div>
       </div>
     </section>

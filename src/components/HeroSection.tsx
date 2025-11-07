@@ -43,7 +43,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="font-semibold text-sm"
               style={{ color: colors.primary }}
             >
-              Secure Digital Savings • Web3 Products With Web2 UX
+              Secure Digital Savings • Powered by Blockchain
             </span>
           </div>
 
@@ -61,7 +61,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             style={{ color: colors.text, opacity: 0.8 }}
           >
             Deposit in 35+ currencies, save in Digital Dollars (cUSD), withdraw
-            anywhere. Community savings meets modern technology.
+            anywhere. Community savings made more easier and transparent.
           </p>
 
           {/* decentralized messaging */}

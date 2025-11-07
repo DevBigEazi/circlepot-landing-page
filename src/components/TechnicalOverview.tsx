@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Coins, Zap, Shield } from 'lucide-react';
+import { Globe, Coins, Zap } from 'lucide-react';
 import type { ThemeColors } from '../types';
 
 interface TechnicalOverviewProps {
@@ -11,7 +11,7 @@ export const TechnicalOverview: React.FC<TechnicalOverviewProps> = ({ colors }) 
     <section className="py-20" style={{ backgroundColor: colors.background }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-5xl font-bold mb-4" style={{ color: colors.text }}>How CirclePot Works</h2>
+          <h2 className="text-5xl font-bold mb-4" style={{ color: colors.text }}>How Circlepot Works</h2>
           <p className="text-xl max-w-3xl mx-auto font-medium" style={{ color: colors.text, opacity: 0.8 }}>
             The technology behind secure, transparent, and automated community savings
           </p>
@@ -65,7 +65,7 @@ export const TechnicalOverview: React.FC<TechnicalOverviewProps> = ({ colors }) 
                 <div className="text-sm font-medium" style={{ color: colors.text, opacity: 0.75 }}>Monitors your savings progress and sends reminders</div>
               </div>
               <div className="p-4 rounded-xl border" style={{ borderColor: colors.border }}>
-                <div className="font-bold mb-2" style={{ color: colors.text }}>Trust Scoring</div>
+                <div className="font-bold mb-2" style={{ color: colors.text }}>Credit scoring</div>
                 <div className="text-sm font-medium" style={{ color: colors.text, opacity: 0.75 }}>Tracks reliability and builds community trust</div>
               </div>
               <div className="p-4 rounded-xl border" style={{ borderColor: colors.border }}>
@@ -77,7 +77,7 @@ export const TechnicalOverview: React.FC<TechnicalOverviewProps> = ({ colors }) 
         </div>
 
         {/* Key Benefits */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
+        {/* <div className="mt-16 grid md:grid-cols-3 gap-8">
           {[
             { icon: Zap, title: 'Zero Smart Contract Gas Fees', desc: 'Advanced technology eliminates all transaction costs', color: colors.primary },
             { icon: Shield, title: 'Your Money, Your Control', desc: 'You always maintain full control of your funds', color: colors.secondary },
@@ -91,7 +91,7 @@ export const TechnicalOverview: React.FC<TechnicalOverviewProps> = ({ colors }) 
               <p className="text-sm font-medium" style={{ color: colors.text, opacity: 0.75 }}>{benefit.desc}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -11,9 +11,9 @@ interface FeaturesShowcaseProps {
 export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({ colors, currentCurrency }) => {
   const features = [
     { icon: Shield, title: 'Secure & Transparent', desc: 'Advanced security ensures your money is safe' },
-    { icon: Zap, title: 'Blockchain Account Abstraction', desc: 'We cover all transaction gas costs - save more' },
-    { icon: Globe, title: 'Global Access', desc: 'Save in Digital Stablecoins (cUSD), spend in local currency' },
-    { icon: Users, title: 'Community Driven', desc: 'Join trusted circles with trust scores' }
+    { icon: Zap, title: 'Easy To Use, Zero Fees', desc: 'We cover all transaction costs - save more' },
+    { icon: Globe, title: 'Save From Anywhere', desc: 'Save in Digital Stablecoins (cUSD), spend in local currency' },
+    { icon: Users, title: 'Community Driven', desc: 'Join or create circles and save with friends and family or like-minded people globally' }
   ];
 
   return (
@@ -22,7 +22,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({ colors, curr
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="animate-slideInLeft">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 px-2 sm:px-0" style={{ color: colors.text }}>
-              Why Choose CirclePot?
+              Why Choose Circlepot?
             </h2>
             <div className="space-y-4 sm:space-y-6">
               {features.map((feature, idx) => (

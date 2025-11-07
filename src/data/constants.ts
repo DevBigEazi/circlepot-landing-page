@@ -122,7 +122,7 @@ export const partners: Partner[] = [
 export const faqs: FAQ[] = [
   {
     question: "How do I add money to my account?",
-    answer: "Use our partner networks like Fonbnk, Yellow Card, Quidax, or Transfi to deposit via bank transfer, mobile money (M-Pesa, MTN Momo), or cards. Your local currency is converted to stablecoin (digital dollar on blockchain) automatically when you deposit through our partners.",
+    answer: "Use our third-party partner networks like Fonbnk, Yellow Card, Quidax, or Transfi to deposit via bank transfer, mobile money (M-Pesa, MTN Momo), or cards. Your local currency is converted to stablecoin (digital dollar on blockchain) automatically when you deposit through our partners.",
   },
   {
     question: "Which digital currencies are supported?",
@@ -130,26 +130,26 @@ export const faqs: FAQ[] = [
   },
   {
     question: "How do I withdraw to my local bank?",
-    answer: "Convert your digital currency (stablecoin) back to local currency through our partners. Withdraw directly to your bank account, mobile money wallet, or digital wallet. All withdrawals are instant and free.",
+    answer: "Convert your digital currency (stablecoin) back to local currency through our third-party partners. Withdraw directly to your bank account, mobile money wallet, or digital wallet. All withdrawals are instant.",
   },
   {
     question: "Are there any fees?",
-    answer: "CirclePot charges minimal fees: 0.2% platform fee on member payouts (circle creators pay 0%), $0.50 fixed fee for making circles public, and small penalties for early goal withdrawals. All smart contract interactions are free.",
+    answer: "We charge minimal fees: 0.2% maintenance fee on member payouts (circle creators pay 0%), $0.50 fixed fee for making circles public, 1% late fee for late payments in circles, and small penalties for early goal withdrawals (1.0% at 0-24% progress, 0.6% at 25-49%, 0.3% at 50-74%, 0.1% at 75-99%, and 0% at 100% completion).",
   },
   {
     question: "Is my money safe?",
-    answer: "Yes! We use secure smart contract wallets that you control completely. Automated systems handle circle operations with full transparency. Recovery is easy through email/phone - no complex passwords to remember.",
+    answer: "Yes! We use secure smart contract EOA wallets that you control completely. Battle-tested smart contract systems handle circle operations and individual savings with full transparency. Recovery is easy through email/phone - no complex passwords to remember.",
   },
   {
     question: "Which countries are supported?",
-    answer: "We support 35+ local currencies including NGN, KES, GHS, ZAR, USD, EUR, GBP, CAD, XAF, INR and more through our global partner network.",
+    answer: "We support 35+ local currencies including NGN, KES, GHS, ZAR, USD, EUR, GBP, CAD, XAF, INR and more through our third-party global partner.",
   },
   {
     question: "How does the app work?",
-    answer: "CirclePot works like any normal savings app. Sign up with email or google, no complex setup needed. All transactions are almost automatic and free. You maintain full control of your funds while enjoying simple, familiar banking.",
+    answer: "Circlepot works like any normal savings app. Sign up with email or google, no complex setup needed. All transactions are almost automatic and free. You maintain full control of your funds while enjoying simple, familiar banking.",
   },
   {
     question: "What happens if I miss a payment?",
-    answer: "Our system automatically tries to collect your payment every 12 hours during a grace period (48 hours for weekly/monthly circles). If you miss the deadline, a 1% late fee is deducted from your security deposit, and your trust score decreases slightly.",
+    answer: "Our system automatically tries to collect your payment every 12 hours during a grace period (12 hours for daily, and 48 hours for weekly/monthly circles). If you miss the deadline, a 1% late fee is deducted from your security deposit, and your onchain credit score decreases slightly.",
   },
 ];

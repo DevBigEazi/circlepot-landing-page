@@ -15,7 +15,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ colors, openFaq, setOpen
       <div className="max-w-4xl mx-auto px-3 sm:px-4 lg:px-6">
         <div className="text-center mb-8 sm:mb-12 animate-fadeIn px-2">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4" style={{ color: colors.text }}>FAQ</h2>
-          <p className="text-base sm:text-lg lg:text-xl font-medium" style={{ color: colors.text, opacity: 0.8 }}>Common questions about CirclePot</p>
+          <p className="text-base sm:text-lg lg:text-xl font-medium" style={{ color: colors.text, opacity: 0.8 }}>Common questions about Circlepot</p>
         </div>
         
         <div className="space-y-3 sm:space-y-4">

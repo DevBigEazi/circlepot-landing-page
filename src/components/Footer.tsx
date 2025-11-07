@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: colors.primary }}>
                 <img src={appLogo} alt="Cirlepot logo" height={50} width={50}/>
               </div>
-              <span className="font-bold text-xl" style={{ color: colors.text }}>CirclePot</span>
+              <span className="font-bold text-xl" style={{ color: colors.text }}>Circlepot</span>
             </div>
             <p className="text-sm font-medium" style={{ color: colors.text, opacity: 0.75 }}>Powered by Celo Blockchain</p>
           </div>
@@ -46,7 +46,7 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
           </div>
         </div>
         <div className="border-t pt-8 text-center text-sm font-medium" style={{ borderColor: colors.border, color: colors.text, opacity: 0.7 }}>
-          © 2025 CirclePot. All rights reserved.
+          © 2025 Circlepot. All rights reserved.
         </div>
       </div>
     </footer>
