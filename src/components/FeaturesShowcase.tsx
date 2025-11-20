@@ -17,7 +17,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({ colors, curr
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
+    <section id='features' className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="animate-slideInLeft">

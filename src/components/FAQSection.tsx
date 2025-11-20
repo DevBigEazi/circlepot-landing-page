@@ -11,7 +11,7 @@ interface FAQSectionProps {
 
 export const FAQSection: React.FC<FAQSectionProps> = ({ colors, openFaq, setOpenFaq }) => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
+    <section id='faq' className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
       <div className="max-w-4xl mx-auto px-3 sm:px-4 lg:px-6">
         <div className="text-center mb-8 sm:mb-12 animate-fadeIn px-2">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4" style={{ color: colors.text }}>FAQ</h2>

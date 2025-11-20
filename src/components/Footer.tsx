@@ -73,17 +73,17 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               style={{ color: colors.text, opacity: 0.75 }}
             >
               <li>
-                <a href="#" className="hover:opacity-100 transition">
+                <a href="#how-it-works" className="hover:opacity-100 transition">
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:opacity-100 transition">
+                <a href="#features" className="hover:opacity-100 transition">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:opacity-100 transition">
+                <a href="#partners" className="hover:opacity-100 transition">
                   Partners
                 </a>
               </li>
@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               style={{ color: colors.text, opacity: 0.75 }}
             >
               <li>
-                <a href="#" className="hover:opacity-100 transition">
+                <a href="#faq" className="hover:opacity-100 transition">
                   FAQ
                 </a>
               </li>

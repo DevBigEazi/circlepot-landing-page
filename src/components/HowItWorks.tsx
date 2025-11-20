@@ -46,7 +46,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
+    <section id='how-it-works' className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
         <div className="text-center mb-10 sm:mb-16 animate-fadeIn px-2">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4" style={{ color: colors.text }}>How It Works</h2>

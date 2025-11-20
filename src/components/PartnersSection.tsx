@@ -9,7 +9,7 @@ interface PartnersSectionProps {
 
 export const PartnersSection: React.FC<PartnersSectionProps> = ({ colors }) => {
   return (
-    <section className="py-20" style={{ backgroundColor: colors.background }}>
+    <section id='partners' className="py-20" style={{ backgroundColor: colors.background }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fadeIn">
           <h2 className="text-5xl font-bold mb-6" style={{ color: colors.text }}>Trusted Partners</h2>
