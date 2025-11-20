@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import appLogo from '../assets/app-logo.png';
+import appLogo from '../assets/full-logo.png';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { useTheme } from '../context/ThemeContext';
 import { WaitlistModal } from './WaitlistModal';
@@ -13,17 +13,16 @@ export const Navigation: React.FC = () => {
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
         <div className="flex justify-between items-center h-16 sm:h-20">
           <div className="flex items-center gap-2 sm:gap-3">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: colors.primary }}>
-              <img 
-                src={appLogo} 
-                alt="Circlepot logo" 
-                className="w-5 h-5 sm:w-6 sm:h-6"
-              />
-            </div>
-            <div className="shrink-0">
+     
+          <img 
+  src={appLogo} 
+  alt="Circlepot logo" 
+  className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto"
+/>
+            {/* <div className="shrink-0">
               <span className="text-xl sm:text-2xl font-bold whitespace-nowrap" style={{ color: colors.text }}>Circlepot</span>
               <p className="text-[10px] sm:text-xs font-medium whitespace-nowrap" style={{ color: colors.text, opacity: 0.7 }}>Save Together, Grow Together</p>
-            </div>
+            </div> */}
           </div>
           
           <div className="flex items-center gap-2 sm:gap-4">

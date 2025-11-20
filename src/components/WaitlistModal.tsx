@@ -30,7 +30,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose })
   };
 
   const checkEmailExists = async (email: string): Promise<boolean> => {
-    const API_ID = import.meta.env.VITE_API_ID;
+    const API_ID = import.meta.env.VITE_SHEETDB_API;
     if (!API_ID) {
       throw new Error('Configuration error. Please try again later.');
     }
@@ -60,7 +60,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose })
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    const API_ID = import.meta.env.VITE_API_ID;
+    const API_ID = import.meta.env.VITE_SHEETDB_API;
     if (!API_ID) {
       console.error('API_ID is not defined in environment variables');
       setSubmitStatus({ success: false, message: 'Configuration error. Please try again later.' });
