@@ -1,4 +1,5 @@
 import React from "react";
+import { FaXTwitter, FaLinkedin, FaTelegram } from "react-icons/fa6";
 import type { ThemeColors } from "../types";
 import appLogo from "../assets/full-logo.png";
 
@@ -7,6 +8,24 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ colors }) => {
+  const socialLinks = [
+    {
+      name: "X",
+      url: "https://twitter.com",
+      icon: FaXTwitter,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://linkedin.com",
+      icon: FaLinkedin,
+    },
+    {
+      name: "Telegram",
+      url: "https://telegram.org",
+      icon: FaTelegram,
+    },
+  ];
+
   return (
     <footer
       className="border-t py-12"
@@ -21,11 +40,29 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto"
             />
             <p
-              className="text-sm font-medium"
+              className="text-sm font-medium mt-4"
               style={{ color: colors.text, opacity: 0.75 }}
             >
               Powered by Celo Blockchain
             </p>
+            <div className="flex gap-4 mt-6">
+              {socialLinks.map((link) => {
+                const IconComponent = link.icon;
+                return (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={link.name}
+                    className="transition hover:opacity-100"
+                    style={{ color: colors.text, opacity: 0.75 }}
+                  >
+                    <IconComponent className="w-5 h-5" />
+                  </a>
+                );
+              })}
+            </div>
           </div>
           <div>
             <h4 className="font-bold mb-4" style={{ color: colors.text }}>
@@ -62,16 +99,6 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
             >
               <li>
                 <a href="#" className="hover:opacity-100 transition">
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:opacity-100 transition">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:opacity-100 transition">
                   FAQ
                 </a>
               </li>
@@ -93,11 +120,6 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               <li>
                 <a href="#" className="hover:opacity-100 transition">
                   Privacy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:opacity-100 transition">
-                  Security
                 </a>
               </li>
             </ul>
