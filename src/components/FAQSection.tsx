@@ -1,7 +1,8 @@
-import React from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
-import type { ThemeColors } from '../types';
-import { faqs } from '../data/constants';
+import React from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import type { ThemeColors } from "../types";
+import { faqs } from "../data/constants";
+import { Link } from "react-router-dom";
 
 interface FAQSectionProps {
   colors: ThemeColors;
@@ -9,48 +10,127 @@ interface FAQSectionProps {
   setOpenFaq: (index: number | null) => void;
 }
 
-export const FAQSection: React.FC<FAQSectionProps> = ({ colors, openFaq, setOpenFaq }) => {
+export const FAQSection: React.FC<FAQSectionProps> = ({
+  colors,
+  openFaq,
+  setOpenFaq,
+}) => {
+  const miniFaqs = faqs.slice(0, 5);
+
   return (
-    <section id='faq' className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
-      <div className="max-w-4xl mx-auto px-3 sm:px-4 lg:px-6">
-        <div className="text-center mb-8 sm:mb-12 animate-fadeIn px-2">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4" style={{ color: colors.text }}>FAQ</h2>
-          <p className="text-base sm:text-lg lg:text-xl font-medium" style={{ color: colors.text, opacity: 0.8 }}>Common questions about Circlepot</p>
-        </div>
-        
-        <div className="space-y-3 sm:space-y-4">
-          {faqs.map((faq, index) => (
-            <div 
-              key={index} 
-              className="border-2 rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-300 animate-slideUp" 
-              style={{ 
-                backgroundColor: colors.surface, 
-                borderColor: openFaq === index ? colors.primary : colors.border, 
-                animationDelay: `${index * 0.05}s` 
+    <section id="faq" className="py-16 sm:py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16 lg:gap-24 items-start">
+          {/* FAQ Header */}
+          <div className="lg:sticky lg:top-40">
+            <div
+              className="inline-block px-4 py-1.5 rounded-full border mb-8"
+              style={{
+                borderColor: colors.border,
+                backgroundColor: colors.surface,
               }}
             >
-              <button
-                className="flex justify-between items-center w-full p-4 sm:p-5 md:p-6 text-left transition-colors hover:opacity-90"
-                onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                aria-expanded={openFaq === index}
-                aria-controls={`faq-${index}`}
+              <span
+                className="text-xs font-black uppercase tracking-widest"
+                style={{ color: colors.primary }}
               >
-                <span className="text-base sm:text-lg font-bold pr-3 sm:pr-4" style={{ color: colors.text }}>{faq.question}</span>
-                <div className="shrink-0">
-                  {openFaq === index ? (
-                    <ChevronUp style={{ color: colors.primary }} size={20} className="w-5 h-5" />
-                  ) : (
-                    <ChevronDown style={{ color: colors.textLight }} size={20} className="w-5 h-5" />
-                  )}
-                </div>
-              </button>
-              {openFaq === index && (
-                <div id={`faq-${index}`} className="px-4 sm:px-6 pb-5 sm:pb-6 pt-0">
-                  <p className="text-sm sm:text-base leading-relaxed font-medium" style={{ color: colors.text, opacity: 0.8 }}>{faq.answer}</p>
-                </div>
-              )}
+                Information
+              </span>
             </div>
-          ))}
+            <h2
+              className="text-5xl sm:text-7xl font-black tracking-tighter mb-8 leading-none"
+              style={{ color: colors.text }}
+            >
+              Questions <br /> & Answers.
+            </h2>
+            <p
+              className="text-lg sm:text-xl font-medium opacity-50 max-w-sm mb-12"
+              style={{ color: colors.text }}
+            >
+              Everything you need to know about starting your savings journey
+              with Circlepot.
+            </p>
+
+            <Link
+              to="/help"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-sm transition-all hover:scale-105 active:scale-95"
+              style={{
+                backgroundColor: colors.surface,
+                color: colors.text,
+                border: `2px solid ${colors.border}`,
+              }}
+            >
+              View All FAQs
+            </Link>
+          </div>
+
+          {/* FAQ Accordion */}
+          <div className="space-y-4">
+            {miniFaqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bento-card overflow-hidden transition-all duration-500"
+                style={{
+                  backgroundColor:
+                    openFaq === index ? colors.background : colors.surface,
+                  borderColor:
+                    openFaq === index ? colors.primary : colors.border,
+                }}
+              >
+                <button
+                  className="flex justify-between items-start w-full p-8 sm:p-10 text-left transition-all group"
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  aria-expanded={openFaq === index}
+                  aria-controls={`faq-${index}`}
+                >
+                  <span
+                    className="text-xl sm:text-2xl font-bold tracking-tight pr-10"
+                    style={{ color: colors.text }}
+                  >
+                    {faq.question}
+                  </span>
+                  <div
+                    className="shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center border transition-all duration-300 mt-1"
+                    style={{
+                      borderColor: colors.border,
+                      backgroundColor:
+                        openFaq === index ? colors.primary : colors.surface,
+                    }}
+                  >
+                    {openFaq === index ? (
+                      <ChevronUp className="text-black" size={24} />
+                    ) : (
+                      <ChevronDown
+                        style={{ color: colors.textLight }}
+                        size={24}
+                      />
+                    )}
+                  </div>
+                </button>
+
+                <div
+                  id={`faq-${index}`}
+                  className={`transition-all duration-500 ease-in-out ${
+                    openFaq === index
+                      ? "max-h-[800px] opacity-100"
+                      : "max-h-0 opacity-0"
+                  } overflow-hidden`}
+                >
+                  <div
+                    className="p-10 pt-0 border-t border-dashed mt-0"
+                    style={{ borderColor: colors.border }}
+                  >
+                    <p
+                      className="text-lg leading-relaxed font-medium mt-8 max-w-2xl opacity-70"
+                      style={{ color: colors.text }}
+                    >
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

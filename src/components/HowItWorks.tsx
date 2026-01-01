@@ -1,6 +1,6 @@
-import React from 'react';
-import { Banknote, Coins, User2, Users, Wallet } from 'lucide-react';
-import type { ThemeColors } from '../types';
+import React from "react";
+import { Banknote, Coins, User2, Users, Wallet } from "lucide-react";
+import type { ThemeColors } from "../types";
 
 interface HowItWorksProps {
   colors: ThemeColors;
@@ -13,69 +13,114 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
       title: "Deposit Local Currency",
       description: "Bank transfer, mobile money, or cards",
       icon: Banknote,
-      color: colors.primary
+      color: colors.primary,
     },
     {
       step: "02",
       title: "We Auto-Convert to Digital Dollars",
-      description: "Secure cUSD conversion",
+      description: "Stable conversion",
       icon: Coins,
-      color: colors.secondary
+      color: colors.secondary,
     },
     {
       step: "03",
       title: "Join Savings Circles",
       description: "Save with trusted community groups",
       icon: Users,
-      color: colors.accent
+      color: colors.accent,
     },
     {
       step: "04",
       title: "Create Personal Goal Saving",
-      description: "Define and track your custom savings targets",
+      description: "Define targets and earn yield while you save",
       icon: User2,
-      color: colors.successBorder
+      color: colors.successBorder,
     },
     {
       step: "05",
       title: "Withdraw In Your Local Currency",
       description: "Direct to bank or mobile money",
       icon: Wallet,
-      color: colors.secondary
-    }
+      color: colors.secondary,
+    },
   ];
 
   return (
-    <section id='how-it-works' className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: colors.background }}>
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
-        <div className="text-center mb-10 sm:mb-16 animate-fadeIn px-2">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4" style={{ color: colors.text }}>How It Works</h2>
-          <p className="text-base sm:text-lg lg:text-xl max-w-2xl mx-auto" style={{ color: colors.text, opacity: 0.8 }}>
-            Five simple steps to start saving with Circlepot
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 px-2 sm:px-0">
-          {steps.map((step, idx) => (
-            <div 
-              key={idx} 
-              className="rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-8 shadow-lg sm:shadow-xl border hover:scale-[1.02] sm:hover:scale-105 hover:shadow-xl sm:hover:shadow-2xl transition-all duration-300 relative overflow-hidden animate-slideUp" 
-              style={{ 
-                backgroundColor: colors.surface, 
-                borderColor: colors.border, 
-                animationDelay: `${idx * 0.1}s` 
+    <section id="how-it-works" className="py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
+          <div className="max-w-2xl">
+            <div
+              className="inline-block px-4 py-1.5 rounded-full border mb-6"
+              style={{
+                borderColor: colors.border,
+                backgroundColor: colors.surface,
               }}
             >
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-4xl sm:text-5xl lg:text-6xl font-black opacity-5" style={{ color: step.color }}>
+              <span
+                className="text-xs font-black uppercase tracking-widest"
+                style={{ color: colors.primary }}
+              >
+                The Process
+              </span>
+            </div>
+            <h2
+              className="text-5xl sm:text-6xl font-black tracking-tighter"
+              style={{ color: colors.text }}
+            >
+              Five simple steps to <br /> financial freedom.
+            </h2>
+          </div>
+          <p
+            className="text-lg sm:text-xl max-w-md lg:text-right"
+            style={{ color: colors.textLight }}
+          >
+            We've simplified everything behind the scenes to give you a
+            familiar, secure experience.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {steps.map((step, idx) => (
+            <div
+              key={idx}
+              className="bento-card p-8 group transition-all duration-500 hover:scale-[1.02]"
+              style={{
+                backgroundColor: colors.surface,
+                borderColor: colors.border,
+              }}
+            >
+              <div
+                className="text-6xl font-black mb-12 transition-colors duration-500 group-hover:text-emerald-500 opacity-10 group-hover:opacity-100"
+                style={{ color: colors.text }}
+              >
                 {step.step}
               </div>
-              <div className="relative">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg" style={{ backgroundColor: step.color }}>
-                  <step.icon className="text-white" size={24} />
+
+              <div className="relative z-10">
+                <div
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center mb-8 border transition-transform duration-500 group-hover:-rotate-12"
+                  style={{
+                    backgroundColor: colors.background,
+                    borderColor: colors.border,
+                  }}
+                >
+                  <step.icon style={{ color: colors.primary }} size={24} />
                 </div>
-                <div className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: step.color }}>{step.step}</div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: colors.text }}>{step.title}</h3>
-                <p className="text-sm sm:text-base" style={{ color: colors.text, opacity: 0.85 }}>{step.description}</p>
+
+                <h3
+                  className="text-xl font-bold mb-4 tracking-tight leading-tight"
+                  style={{ color: colors.text }}
+                >
+                  {step.title}
+                </h3>
+
+                <p
+                  className="text-sm font-medium leading-relaxed opacity-60"
+                  style={{ color: colors.text }}
+                >
+                  {step.description}
+                </p>
               </div>
             </div>
           ))}
