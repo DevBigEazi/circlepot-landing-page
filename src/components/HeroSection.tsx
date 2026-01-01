@@ -18,7 +18,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   currentCurrency,
 }) => {
   return (
-    <section className="relative mt-22 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+    <section className="relative mt-22 pb-10 lg:pt-24 lg:pb-12 overflow-hidden">
       {/* Structural background elements */}
       <div className="absolute inset-0 -z-10">
         <div

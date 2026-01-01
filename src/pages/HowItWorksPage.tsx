@@ -60,7 +60,7 @@ export const HowItWorksPage: React.FC = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">
+      <section className="pt-32 pb-12 sm:pt-40 sm:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div
             className="inline-block px-4 py-1.5 rounded-full border mb-8"
@@ -94,7 +94,7 @@ export const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Understanding Savings Circles */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
@@ -260,7 +260,7 @@ export const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Personal Savings Goals */}
-      <section className="py-20 sm:py-32">
+      <section className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -424,7 +424,7 @@ export const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Reputation System */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div
@@ -562,7 +562,7 @@ export const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* How Interest Works */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2
@@ -723,7 +723,7 @@ export const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Commitment & Security */}
-      <section className="py-16 sm:py-24 bg-black/5 dark:bg-white/5">
+      <section className="py-12 sm:py-16 bg-black/5 dark:bg-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2

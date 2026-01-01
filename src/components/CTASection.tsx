@@ -8,7 +8,7 @@ interface CTASectionProps {
 
 export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24">
+    <section className="py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className="bento-card overflow-hidden relative"
