@@ -43,7 +43,7 @@ export const Navigation: React.FC = () => {
 
   return (
     <nav
-      className="fixed w-full top-0 z-5 glass"
+      className="fixed w-full top-0 z-5"
       style={{
         backgroundColor: isMenuOpen
           ? colors.background
