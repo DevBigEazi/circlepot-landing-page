@@ -46,7 +46,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
   ];
 
   return (
-    <section id="how-it-works" className="py-16 sm:py-20">
+    <section id="how-it-works" className="py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
@@ -65,15 +65,16 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
               </span>
             </div>
             <h2
-              className="text-5xl sm:text-6xl font-black tracking-tighter"
+              className="text-5xl sm:text-8xl font-black tracking-tighter leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
-              Five simple steps to <br /> financial freedom.
+              Five simple steps to <br className="hidden sm:block" /> financial
+              freedom.
             </h2>
           </div>
           <p
-            className="text-lg sm:text-xl max-w-md lg:text-right"
-            style={{ color: colors.textLight }}
+            className="text-lg sm:text-2xl max-w-sm lg:text-right font-medium opacity-60"
+            style={{ color: colors.text }}
           >
             We've simplified everything behind the scenes to give you a
             familiar, secure experience.

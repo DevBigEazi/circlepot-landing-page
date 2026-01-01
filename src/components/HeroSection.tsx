@@ -53,7 +53,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           <h1
-            className="text-4xl sm:text-7xl lg:text-9xl font-extrabold mb-8 tracking-tighter leading-[0.9] text-balance"
+            className="text-5xl sm:text-7xl lg:text-9xl font-extrabold mb-6 tracking-tighter leading-[0.95] text-balance"
             style={{ color: colors.text }}
           >
             Save Globally,
@@ -62,8 +62,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </h1>
 
           <p
-            className="text-lg sm:text-xl lg:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed text-balance"
-            style={{ color: colors.textLight }}
+            className="text-lg sm:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed text-balance opacity-80"
+            style={{ color: colors.text }}
           >
             Deposit in 35+ currencies, save in Stable Digital Dollars, and earn
             interest automatically. Community savings made simpler, transparent,

@@ -28,7 +28,7 @@ export const PartnersSection: React.FC<PartnersSectionProps> = ({ colors }) => {
               </span>
             </div>
             <h2
-              className="text-5xl sm:text-7xl font-black tracking-tighter leading-none mb-6"
+              className="text-5xl sm:text-7xl lg:text-[6rem] font-black tracking-tighter leading-[0.9] mb-6 text-balance"
               style={{ color: colors.text }}
             >
               Built with industry <br /> leaders.

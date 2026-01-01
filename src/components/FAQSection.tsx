@@ -18,7 +18,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({
   const miniFaqs = faqs.slice(0, 5);
 
   return (
-    <section id="faq" className="py-16 sm:py-20 lg:py-24">
+    <section id="faq" className="py-20 sm:py-32 lg:py-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16 lg:gap-24 items-start">
           {/* FAQ Header */}
@@ -38,13 +38,13 @@ export const FAQSection: React.FC<FAQSectionProps> = ({
               </span>
             </div>
             <h2
-              className="text-5xl sm:text-7xl font-black tracking-tighter mb-8 leading-none"
+              className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
-              Questions <br /> & Answers.
+              Questions <br className="hidden sm:block" /> & Answers.
             </h2>
             <p
-              className="text-lg sm:text-xl font-medium opacity-50 max-w-sm mb-12"
+              className="text-lg sm:text-2xl font-medium opacity-60 max-w-sm mb-12 leading-relaxed"
               style={{ color: colors.text }}
             >
               Everything you need to know about starting your savings journey

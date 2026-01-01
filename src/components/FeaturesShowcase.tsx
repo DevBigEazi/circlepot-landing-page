@@ -44,7 +44,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({
   ];
 
   return (
-    <section id="features" className="py-16 sm:py-20 overflow-hidden">
+    <section id="features" className="py-20 sm:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -63,10 +63,10 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({
               </span>
             </div>
             <h2
-              className="text-5xl sm:text-7xl font-black tracking-tighter mb-8 leading-none"
+              className="text-5xl sm:text-8xl font-black tracking-tighter mb-10 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
-              Why choose <br /> Circlepot?
+              Why choose <br className="hidden sm:block" /> Circlepot?
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {features.map((feature, idx) => (

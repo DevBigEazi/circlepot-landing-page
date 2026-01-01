@@ -30,7 +30,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
 
           <div className="max-w-4xl mx-auto px-6 py-20 sm:py-24 lg:py-32 text-center relative z-10">
             <h2
-              className="text-5xl sm:text-7xl lg:text-9xl font-black mb-8 tracking-tighter leading-none animate-slideUp"
+              className="text-5xl sm:text-8xl lg:text-[10rem] font-black mb-8 tracking-tighter leading-[0.85] text-balance"
               style={{ color: colors.text }}
             >
               Ready to <br /> build wealth?
