@@ -25,7 +25,7 @@ export const PricingPage: React.FC = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 sm:pt-48 sm:pb-32">
+      <section className="pt-32 pb-12 sm:pt-40 sm:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div
             className="inline-block px-4 py-1.5 rounded-full border mb-8"
@@ -57,7 +57,7 @@ export const PricingPage: React.FC = () => {
       </section>
 
       {/* Fee Calculator */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="bento-card p-12"
@@ -166,7 +166,7 @@ export const PricingPage: React.FC = () => {
       </section>
 
       {/* All Fees */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-4xl sm:text-6xl font-black mb-12 text-center tracking-tighter leading-none"
@@ -243,7 +243,7 @@ export const PricingPage: React.FC = () => {
       </section>
 
       {/* What's Free */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="bento-card p-12"
@@ -285,7 +285,7 @@ export const PricingPage: React.FC = () => {
       </section>
 
       {/* Comparison */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-4xl sm:text-6xl font-black mb-12 text-center tracking-tighter leading-none"

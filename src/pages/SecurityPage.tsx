@@ -68,7 +68,7 @@ export const SecurityPage: React.FC = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">
+      <section className="pt-32 pb-12 sm:pt-40 sm:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div
             className="inline-block px-4 py-1.5 rounded-full border mb-8"
@@ -88,7 +88,8 @@ export const SecurityPage: React.FC = () => {
             className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-balance"
             style={{ color: colors.text }}
           >
-            Your Money, <br /> <span style={{ color: colors.primary }}>Your Control</span>
+            Your Money, <br />{" "}
+            <span style={{ color: colors.primary }}>Your Control</span>
           </h1>
           <p
             className="text-xl sm:text-2xl font-medium opacity-60 max-w-2xl mx-auto"
@@ -102,7 +103,7 @@ export const SecurityPage: React.FC = () => {
       </section>
 
       {/* Security Layers */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
@@ -158,7 +159,7 @@ export const SecurityPage: React.FC = () => {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2
@@ -304,7 +305,7 @@ export const SecurityPage: React.FC = () => {
       </section>
 
       {/* Easy Recovery */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -440,7 +441,7 @@ export const SecurityPage: React.FC = () => {
       </section>
 
       {/* Trusted Partners */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2
@@ -522,7 +523,7 @@ export const SecurityPage: React.FC = () => {
       </section>
 
       {/* No Complex Setup */}
-      <section className="py-16 sm:py-20">
+      <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="bento-card p-12 text-center"

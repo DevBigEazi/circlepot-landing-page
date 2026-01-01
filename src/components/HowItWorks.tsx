@@ -46,12 +46,12 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 sm:py-32">
+    <section id="how-it-works" className="py-2 sm:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
             <div
-              className="inline-block px-4 py-1.5 rounded-full border mb-6"
+              className="inline-block px-4 pb-1.5 rounded-full border mb-6"
               style={{
                 borderColor: colors.border,
                 backgroundColor: colors.surface,

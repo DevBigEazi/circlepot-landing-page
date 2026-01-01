@@ -8,10 +8,10 @@ interface PartnersSectionProps {
 
 export const PartnersSection: React.FC<PartnersSectionProps> = ({ colors }) => {
   return (
-    <section id="partners" className="py-16 sm:py-20 lg:py-24">
+    <section id="partners" className="py-10 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Tech Header Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between mb-24 gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-12">
           <div className="max-w-xl text-center lg:text-left">
             <div
               className="inline-block px-4 py-1.5 rounded-full border mb-6"

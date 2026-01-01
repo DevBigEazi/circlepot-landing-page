@@ -18,13 +18,13 @@ export const FAQSection: React.FC<FAQSectionProps> = ({
   const miniFaqs = faqs.slice(0, 5);
 
   return (
-    <section id="faq" className="py-20 sm:py-32 lg:py-40">
+    <section id="faq" className="py-2 sm:py-10 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16 lg:gap-24 items-start">
           {/* FAQ Header */}
           <div className="lg:sticky lg:top-40">
             <div
-              className="inline-block px-4 py-1.5 rounded-full border mb-8"
+              className="inline-block px-4 pb-1.5 rounded-full border mb-8"
               style={{
                 borderColor: colors.border,
                 backgroundColor: colors.surface,

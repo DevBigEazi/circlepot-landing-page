@@ -215,7 +215,7 @@ export const HelpPage: React.FC = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">
+      <section className="pt-32 pb-12 sm:pt-40 sm:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1
             className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-balance"
@@ -254,7 +254,7 @@ export const HelpPage: React.FC = () => {
       </section>
 
       {/* FAQs */}
-      <section className="pb-16 sm:pb-20">
+      <section className="pb-12 sm:pb-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {searchTerm ? (
             /* Search Results */
