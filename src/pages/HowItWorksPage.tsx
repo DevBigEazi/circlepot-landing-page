@@ -77,7 +77,7 @@ export const HowItWorksPage: React.FC = () => {
             </span>
           </div>
           <h1
-            className="text-5xl sm:text-7xl font-black tracking-tighter mb-8"
+            className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-balance"
             style={{ color: colors.text }}
           >
             How Circlepot Works
@@ -98,10 +98,10 @@ export const HowItWorksPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
-              className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+              className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
-              Understanding Savings Circles
+              Understanding <br className="hidden sm:block" /> Savings Circles
             </h2>
             <p
               className="text-lg sm:text-xl font-medium opacity-50 max-w-2xl mx-auto"
@@ -149,7 +149,7 @@ export const HowItWorksPage: React.FC = () => {
 
           {/* Example Circle */}
           <div
-            className="bento-card p-10"
+            className="bento-card p-10 mt-16"
             style={{
               backgroundColor: colors.surface,
               borderColor: colors.border,
@@ -260,7 +260,7 @@ export const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Personal Savings Goals */}
-      <section className="py-16 sm:py-20">
+      <section className="py-20 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -279,13 +279,13 @@ export const HowItWorksPage: React.FC = () => {
                 </span>
               </div>
               <h2
-                className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+                className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
                 style={{ color: colors.text }}
               >
-                Personal Savings Goals
+                Personal <br className="hidden sm:block" /> Savings Goals
               </h2>
               <p
-                className="text-lg font-medium opacity-60 mb-8"
+                className="text-lg sm:text-2xl font-medium opacity-60 mb-10 leading-relaxed"
                 style={{ color: colors.text }}
               >
                 Save on your own schedule. Set a target amount and deadline.
@@ -442,7 +442,7 @@ export const HowItWorksPage: React.FC = () => {
               </span>
             </div>
             <h2
-              className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+              className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
               Your Reputation Score
@@ -566,7 +566,7 @@ export const HowItWorksPage: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2
-              className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+              className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
               Your Money Earns While You Wait
@@ -727,7 +727,7 @@ export const HowItWorksPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
-              className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+              className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
               Commitment & Security
@@ -766,8 +766,8 @@ export const HowItWorksPage: React.FC = () => {
                 style={{ color: colors.text }}
               >
                 To join a circle, members deposit initial collateral. This stays
-                in the contract to protect the group against missed payments
-                and is returned completely once the circle completes.
+                in the contract to protect the group against missed payments and
+                is returned completely once the circle completes.
               </p>
             </div>
 

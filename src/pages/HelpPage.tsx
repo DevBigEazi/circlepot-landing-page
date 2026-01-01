@@ -218,7 +218,7 @@ export const HelpPage: React.FC = () => {
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1
-            className="text-5xl sm:text-7xl font-black tracking-tighter mb-8"
+            className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-balance"
             style={{ color: colors.text }}
           >
             How Can We Help?

@@ -85,10 +85,10 @@ export const SecurityPage: React.FC = () => {
             </span>
           </div>
           <h1
-            className="text-5xl sm:text-7xl font-black tracking-tighter mb-8"
+            className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-balance"
             style={{ color: colors.text }}
           >
-            Your Money, <br /> Your Control
+            Your Money, <br /> <span style={{ color: colors.primary }}>Your Control</span>
           </h1>
           <p
             className="text-xl sm:text-2xl font-medium opacity-60 max-w-2xl mx-auto"
@@ -106,10 +106,10 @@ export const SecurityPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
-              className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+              className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
-              Multiple Layers of Protection
+              Multiple Circles <br className="hidden sm:block" /> of Protection
             </h2>
             <p
               className="text-lg font-medium opacity-50 max-w-2xl mx-auto"
@@ -162,7 +162,7 @@ export const SecurityPage: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2
-              className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+              className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
               What Makes Circlepot Different?
@@ -323,7 +323,7 @@ export const SecurityPage: React.FC = () => {
                 </span>
               </div>
               <h2
-                className="text-4xl sm:text-6xl font-black tracking-tighter mb-6"
+                className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
                 style={{ color: colors.text }}
               >
                 Lost Access? <br /> No Problem.
@@ -532,7 +532,7 @@ export const SecurityPage: React.FC = () => {
             }}
           >
             <h2
-              className="text-4xl sm:text-5xl font-black tracking-tighter mb-6"
+              className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
               No Complicated Setup Required

@@ -25,7 +25,7 @@ export const PricingPage: React.FC = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">
+      <section className="pt-32 pb-16 sm:pt-48 sm:pb-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div
             className="inline-block px-4 py-1.5 rounded-full border mb-8"
@@ -42,7 +42,7 @@ export const PricingPage: React.FC = () => {
             </span>
           </div>
           <h1
-            className="text-5xl sm:text-7xl font-black tracking-tighter mb-8"
+            className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9]"
             style={{ color: colors.text }}
           >
             Simple, Fair Pricing
@@ -169,7 +169,7 @@ export const PricingPage: React.FC = () => {
       <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-4xl font-black mb-12 text-center"
+            className="text-4xl sm:text-6xl font-black mb-12 text-center tracking-tighter leading-none"
             style={{ color: colors.text }}
           >
             All Fees at a Glance
@@ -253,7 +253,7 @@ export const PricingPage: React.FC = () => {
             }}
           >
             <h2
-              className="text-3xl font-black mb-8 text-center"
+              className="text-3xl sm:text-5xl font-black mb-8 text-center tracking-tighter"
               style={{ color: colors.text }}
             >
               What's Completely Free
@@ -288,7 +288,7 @@ export const PricingPage: React.FC = () => {
       <section className="py-16 sm:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-4xl font-black mb-12 text-center"
+            className="text-4xl sm:text-6xl font-black mb-12 text-center tracking-tighter leading-none"
             style={{ color: colors.text }}
           >
             How We Compare
