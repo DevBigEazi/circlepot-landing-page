@@ -4,13 +4,13 @@ flowchart TD
         direction TB
         A1[Start] --> A2[Sign Up<br>60s - Email/Google/Passkey]
         A2 --> A3[Thirdweb Creates<br>Smart Contract Wallet]
-        A3 --> A4[Add Funds cUSD]
-        
+        A3 --> A4[Add Funds USDm]
+
         subgraph A4_Sub [Funding Methods]
             A4_1[🏦 Celo Partner On-Ramp]
             A4_2[🔄 Crypto Exchange]
         end
-        
+
         A4 --> A4_Sub
         A4_Sub --> A5{Funds Added?}
         A5 -- Yes --> A6[Wallet Funded & Ready]
@@ -18,15 +18,15 @@ flowchart TD
     end
 
     A6 --> B{User Choice}
-    
+
     subgraph C [2. SAVINGS CIRCLES JOURNEY]
         B -- Create/Join Circle --> C1{Create or Join Circle?}
-        
+
         C1 -- Create --> C2[Create Circle<br>Set Amount, Frequency, Members]
         C2 --> C3[Lock Collateral<br>Gasless via Thirdweb]
         C3 --> C4[Get Position #1<br>Share Invite Link]
         C4 --> C5[Circle Starts<br>80% Joined + Ultimatum Met]
-        
+
         C1 -- Join --> C6[Browse or Use Invite Link]
         C6 --> C7[Review & Lock Collateral]
         C7 --> C8[Get Assigned Position<br>Based on Reputation]
@@ -47,7 +47,7 @@ flowchart TD
     subgraph E [4. CIRCLE PAYOUT]
         D6 -- Yes --> E1[Your Turn for Payout?]
         E1 -- Yes --> E2[Receive Payout<br>Pot - 0.2% Fee]
-        E2 --> E3[💰 Instant cUSD to Wallet]
+        E2 --> E3[💰 Instant USDm to Wallet]
         E3 --> E4[Certification +6 Rep Points]
         E4 --> E5[Circle Completed]
         E1 -- No --> D1
@@ -69,7 +69,7 @@ flowchart TD
     subgraph G [KEY FEATURES & INFRASTRUCTURE]
         G1[🟡 Thirdweb Account Abstraction]
         G2[💚 Celo L2 Network]
-        G3[💵 cUSD Stablecoin]
+        G3[💵 USDm Stablecoin]
         G4[🤖 Smart Contract Automation]
         G5[⛽ Zero Gas Fees EIP-7702]
         G6[🔒 Collateral Security Circles Only]
@@ -81,7 +81,7 @@ flowchart TD
     classDef primaryJourney fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     classDef goalJourney fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
     classDef infrastructure fill:#fff8e1,stroke:#ff6f00,stroke-width:1px
-    
+
     class C,D,E primaryJourney
     class F goalJourney
     class G infrastructure
@@ -106,9 +106,9 @@ If you are developing a production application, we recommend updating the config
 
 ```js
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
 
@@ -123,40 +123,40 @@ export default defineConfig([
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```
 
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
 // eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
       // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
+      reactX.configs["recommended-typescript"],
       // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```
