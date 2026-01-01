@@ -1,7 +1,8 @@
 import React from "react";
-import { Zap, Users, TrendingUp, Globe, ShieldCheck, Key } from "lucide-react";
+import { Users, TrendingUp, Globe, ShieldCheck, Key } from "lucide-react";
 import type { ThemeColors, Currency } from "../types";
 import { currencies } from "../data/constants";
+import { icons } from "../data/icons";
 
 interface HeroSectionProps {
   colors: ThemeColors;
@@ -17,167 +18,227 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   currentCurrency,
 }) => {
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+    <section className="relative mt-22 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+      {/* Structural background elements */}
+      <div className="absolute inset-0 -z-10">
         <div
-          className="absolute -top-40 -right-40 w-80 h-80 rounded-full opacity-10"
+          className="absolute top-0 right-0 w-[50vw] h-[50vh] opacity-[0.03] pointer-events-none"
           style={{ backgroundColor: colors.primary }}
-        ></div>
+        />
         <div
-          className="absolute top-60 -left-20 w-60 h-60 rounded-full opacity-10"
+          className="absolute bottom-0 left-0 w-[30vw] h-[30vh] opacity-[0.02] pointer-events-none"
           style={{ backgroundColor: colors.secondary }}
-        ></div>
+        />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative">
-        <div className="text-center mb-12 animate-fadeIn">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-4xl mx-auto text-center mb-16 lg:mb-24">
           <div
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full mb-6 border-2 animate-slideUp"
-            style={{
-              backgroundColor: "rgba(53, 208, 127, 0.1)",
-              borderColor: colors.primary,
-            }}
-          >
-            <Zap size={18} style={{ color: colors.primary }} />
-            <span
-              className="font-semibold text-sm"
-              style={{ color: colors.primary }}
-            >
-              Secure Digital Savings • Powered by Blockchain
-            </span>
-          </div>
-
-          <h1
-            className="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight animate-slideUp delay-100"
-            style={{ color: colors.text }}
-          >
-            Save Globally,
-            <br />
-            <span style={{ color: colors.primary }}>Spend Locally</span>
-          </h1>
-
-          <p
-            className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed animate-slideUp delay-200 px-2 sm:px-0"
-            style={{ color: colors.text, opacity: 0.8 }}
-          >
-            Deposit in 35+ currencies, save in Digital Dollars (cUSD), withdraw
-            anywhere. Community savings made more easier and transparent.
-          </p>
-
-          {/* decentralized messaging */}
-          <div className="animate-slideUp delay-300 max-w-2xl mx-auto">
-            <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full" style={{backgroundColor: colors.warningBg}}>
-                <ShieldCheck size={16} style={{ color: colors.primary }} />
-                <span style={{color: colors.textLight}}>You Control Your Funds</span>
-              </div>
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full" style={{backgroundColor: colors.warningBg}}>
-                <Globe size={16} style={{ color: colors.primary }} />
-                <span style={{color: colors.textLight}}>Decentralized Network</span>
-              </div>
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full" style={{background: colors.warningBg}}>
-                <Key size={16} style={{ color: colors.primary }} />
-                <span style={{color: colors.textLight}}>Self-Custodial</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Currency Selector */}
-        <div className="max-w-4xl mx-auto mb-12 animate-scaleIn delay-300 px-2 sm:px-0">
-          <div
-            className="rounded-3xl shadow-2xl p-4 sm:p-6 md:p-8 border"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 border transition-colors duration-300"
             style={{
               backgroundColor: colors.surface,
               borderColor: colors.border,
             }}
           >
-            <label
-              className="block text-center text-base sm:text-lg font-bold mb-4 sm:mb-6"
-              style={{ color: colors.text }}
+            <div
+              className="w-2 h-2 rounded-full animate-pulse"
+              style={{ backgroundColor: colors.primary }}
+            />
+            <span
+              className="font-medium text-xs sm:text-sm tracking-wide uppercase"
+              style={{ color: colors.textLight }}
             >
-              🌍 Choose Your Currency
-            </label>
-            <div className="grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-6 gap-2 sm:gap-3 mb-4 sm:mb-6">
-              {Object.entries(currencies).map(([code, currency]) => (
-                <button
-                  key={code}
-                  onClick={() => setSelectedCurrency(code)}
-                  className={`flex flex-col items-center gap-1 sm:gap-2 p-2 sm:p-3 md:p-4 rounded-xl sm:rounded-2xl font-bold transition-all duration-300 text-xs sm:text-sm ${
-                    selectedCurrency === code
-                      ? "shadow-lg scale-105"
-                      : "hover:scale-105"
-                  }`}
+              Secure Digital Savings • Global Infrastructure
+            </span>
+          </div>
+
+          <h1
+            className="text-5xl sm:text-7xl lg:text-9xl font-extrabold mb-6 tracking-tighter leading-[0.95] text-balance"
+            style={{ color: colors.text }}
+          >
+            Save Globally,
+            <br />
+            <span style={{ color: colors.primary }}>Spend locally.</span>
+          </h1>
+
+          <p
+            className="text-lg sm:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed text-balance opacity-80"
+            style={{ color: colors.text }}
+          >
+            Deposit in 35+ currencies, save in Stable Digital Dollars, and earn
+            interest automatically. Community savings made simpler, transparent,
+            and rewarding.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { icon: ShieldCheck, text: "You Control Your Funds" },
+              { icon: Globe, text: "Global Partner Network" },
+              { icon: Key, text: "Full Control" },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl border"
+                style={{
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                }}
+              >
+                <item.icon size={16} style={{ color: colors.primary }} />
+                <span
+                  className="text-sm font-medium"
+                  style={{ color: colors.text }}
+                >
+                  {item.text}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Currency Selector - Bento Style */}
+        <div className="max-w-5xl mx-auto mb-20">
+          <div
+            className="bento-card p-6 sm:p-10 lg:p-12"
+            style={{
+              backgroundColor: colors.surface,
+              borderColor: colors.border,
+            }}
+          >
+            <div className="flex flex-col lg:flex-row gap-10 items-center">
+              <div className="flex-1 w-full text-center lg:text-left">
+                <h2
+                  className="text-2xl sm:text-3xl font-bold mb-4"
+                  style={{ color: colors.text }}
+                >
+                  Ready to start saving?
+                </h2>
+                <p className="text-lg mb-8" style={{ color: colors.textLight }}>
+                  Select your local currency to see how much you can grow your
+                  wealth.
+                </p>
+                <div
+                  className="p-6 rounded-2xl border hidden lg:block"
                   style={{
-                    backgroundColor:
-                      selectedCurrency === code
-                        ? colors.primary
-                        : colors.infoBg,
-                    color: selectedCurrency === code ? "white" : colors.text,
-                    border: `1px solid ${
-                      selectedCurrency === code ? colors.primary : colors.border
-                    }`,
+                    backgroundColor: colors.background,
+                    borderColor: colors.border,
                   }}
                 >
-                  <span className="text-2xl sm:text-3xl">{currency.flag}</span>
-                  <span>{code}</span>
+                  <div
+                    className="text-sm uppercase tracking-widest mb-1 opacity-50"
+                    style={{ color: colors.text }}
+                  >
+                    Selected Market
+                  </div>
+                  <div
+                    className="text-2xl font-bold"
+                    style={{ color: colors.text }}
+                  >
+                    {currentCurrency.flag} {currentCurrency.name}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-[1.5] w-full">
+                <div className="grid grid-cols-4 sm:grid-cols-5 gap-3 mb-8">
+                  {Object.entries(currencies).map(([code, currency]) => (
+                    <button
+                      key={code}
+                      onClick={() => setSelectedCurrency(code)}
+                      className={`flex flex-col items-center justify-center p-3 rounded-2xl transition-all duration-300 border-2 ${
+                        selectedCurrency === code
+                          ? "scale-105 shadow-xl"
+                          : "hover:border-neutral-500"
+                      }`}
+                      style={{
+                        backgroundColor:
+                          selectedCurrency === code
+                            ? colors.primary
+                            : colors.background,
+                        borderColor:
+                          selectedCurrency === code
+                            ? colors.primary
+                            : colors.border,
+                        color:
+                          selectedCurrency === code ? "#000000" : colors.text,
+                      }}
+                    >
+                      <span className="text-2xl mb-1">{currency.flag}</span>
+                      <span className="text-xs font-bold uppercase tracking-tighter">
+                        {code}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  className="w-full py-5 rounded-2xl font-black text-lg sm:text-xl transition-all duration-300 active:scale-95 shadow-lg hover:shadow-2xl"
+                  style={{
+                    backgroundColor: colors.primary,
+                    color: "#000000",
+                  }}
+                >
+                  Start Saving in {selectedCurrency} →
                 </button>
-              ))}
-            </div>
-            <div className="text-center">
-              <p
-                className="text-xs sm:text-sm mb-3 sm:mb-4 font-medium"
-                style={{ color: colors.text, opacity: 0.75 }}
-              >
-                Selected:{" "}
-                <strong style={{ color: colors.text }}>
-                  {currentCurrency.name}
-                </strong>
-              </p>
-              <button
-                className="w-full px-4 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-base sm:text-lg whitespace-nowrap"
-                style={{ backgroundColor: colors.primary }}
-              >
-                Start Saving in {selectedCurrency} →
-              </button>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-3 gap-3 sm:gap-6 max-w-3xl mx-auto animate-slideUp delay-400 px-2 sm:px-0">
+        {/* Improved Stats */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {[
             { value: "10K+", label: "Active Users", icon: Users },
-            { value: "$2M+", label: "Total Saved", icon: TrendingUp },
+            { value: "8.5%", label: "Avg. Yield", icon: TrendingUp },
+            { value: "$2.4M+", label: "Saved & Earned", icon: ShieldCheck },
             { value: "35+", label: "Currencies", icon: Globe },
           ].map((stat, idx) => (
             <div
               key={idx}
-              className="rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 text-center shadow-lg border hover:scale-105 hover:shadow-xl transition-all duration-300"
+              className="group bento-card p-8 flex flex-col items-center justify-center text-center"
               style={{
                 backgroundColor: colors.surface,
                 borderColor: colors.border,
               }}
             >
-              <stat.icon
-                className="mx-auto mb-1 sm:mb-3"
-                size={24}
-                style={{ color: colors.primary }}
-              />
               <div
-                className="text-xl sm:text-2xl md:text-3xl font-bold mb-1"
+                className="p-4 rounded-2xl mb-4 transition-colors duration-500 group-hover:bg-opacity-20"
+                style={{ backgroundColor: colors.background }}
+              >
+                <stat.icon size={28} style={{ color: colors.primary }} />
+              </div>
+              <div
+                className="text-4xl font-black mb-1 tracking-tighter"
                 style={{ color: colors.text }}
               >
                 {stat.value}
               </div>
               <div
-                className="text-xs sm:text-sm font-medium"
-                style={{ color: colors.text, opacity: 0.75 }}
+                className="text-sm font-bold uppercase tracking-widest opacity-40"
+                style={{ color: colors.text }}
               >
                 {stat.label}
               </div>
             </div>
           ))}
+        </div>
+        {/* Trust Row */}
+        <div className="mt-20 flex flex-col items-center gap-6">
+          <span
+            className="text-[10px] font-black uppercase tracking-[0.2em] opacity-30"
+            style={{ color: colors.text }}
+          >
+            Powered by secure global infrastructure
+          </span>
+          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 hover:opacity-100 transition-all duration-700">
+            <img src={icons.celoLogo} alt="Celo" className="h-6 w-auto" />
+            <img src={icons.mentoLogo} alt="Mento" className="h-6 w-auto" />
+            <img
+              src={icons.thirdwebLogo}
+              alt="Thirdweb"
+              className="h-7 w-auto"
+            />
+          </div>
         </div>
       </div>
     </section>

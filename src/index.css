@@ -1,2 +1,115 @@
 @import "tailwindcss";
 
+@layer base {
+  :root {
+    --primary: #35d07f;
+  }
+
+  html {
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  body {
+    @apply antialiased selection:bg-emerald-500/30 font-['Outfit',sans-serif];
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    min-height: -webkit-fill-available;
+    position: relative;
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight font-semibold;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-xl bg-white/10 border-white/20 border;
+  }
+
+  .bento-card {
+    @apply rounded-4xl border transition-all duration-700 hover:shadow-2xl overflow-hidden;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Scroll Animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity;
+  }
+
+  .animate-visible {
+    opacity: 1 !important;
+  }
+
+  /* Reveal Animations */
+  .reveal-up {
+    animation: revealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .reveal-scale {
+    animation: revealScale 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Custom Selection */
+::selection {
+  @apply bg-emerald-500/30 text-emerald-950;
+}
+
+.dark ::selection {
+  @apply bg-emerald-500/30 text-emerald-100;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-800 rounded-full border-2 border-transparent bg-clip-content;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-neutral-200;
+}

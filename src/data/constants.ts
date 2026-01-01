@@ -1,4 +1,5 @@
-import type { Currency, Partner, FAQ } from '../types/index';
+import type { Currency, Partner, TechPartner, FAQ } from '../types/index';
+import { icons } from './icons';
 
 export const currencies: Record<string, Currency> = {
   NGN: {
@@ -27,7 +28,7 @@ export const currencies: Record<string, Currency> = {
     symbol: "USh",
     flag: "🇺🇬",
     banks: ["Stanbic Bank", "Centenary Bank", "DFCU Bank"],
-    mentoToken: "cUSD",
+    mentoToken: "USDm",
   },
   ZAR: {
     name: "South African Rand",
@@ -41,7 +42,7 @@ export const currencies: Record<string, Currency> = {
     symbol: "$",
     flag: "🇺🇸",
     banks: ["Bank of America", "Chase", "Wells Fargo"],
-    mentoToken: "cUSD",
+    mentoToken: "USDm",
   },
   EUR: {
     name: "Euro",
@@ -55,67 +56,100 @@ export const currencies: Record<string, Currency> = {
     symbol: "£",
     flag: "🇬🇧",
     banks: ["Barclays", "HSBC", "Lloyds"],
-    mentoToken: "cUSD",
+    mentoToken: "USDm",
   },
   CAD: {
     name: "Canadian Dollar",
     symbol: "C$",
     flag: "🇨🇦",
     banks: ["RBC", "TD Bank", "Scotiabank"],
-    mentoToken: "cUSD",
+    mentoToken: "USDm",
   },
   XAF: {
     name: "CFA Franc",
     symbol: "FCFA",
     flag: "🇨🇲",
     banks: ["Ecobank", "UBA", "Société Générale"],
-    mentoToken: "cUSD",
+    mentoToken: "USDm",
   },
   INR: {
     name: "Indian Rupee",
     symbol: "₹",
     flag: "🇮🇳",
     banks: ["SBI", "HDFC", "ICICI"],
-    mentoToken: "cUSD",
+    mentoToken: "USDm",
   },
 };
 
 export const partners: Partner[] = [
   {
-    name: 'Fonbnk',
-    region: 'Africa',
-    methods: ['Mobile Money', 'Bank Transfer'],
-    countries: ['Nigeria', 'Kenya', 'Ghana'],
+    name: "Fonbnk",
+    logo: icons.fonbnkLogo,
+    region: "Africa",
+    methods: ["Mobile Money", "Bank Transfer"],
+    countries: ["Nigeria", "Kenya", "Ghana"],
+    brandColor: "#35D07F",
   },
   {
-    name: 'Partna',
-    region: 'Global',
-    methods: ['Card', 'Bank Transfer'],
-    countries: ['50+ Countries'],
+    name: "Quidax",
+    logo: icons.quidaxLogo,
+    region: "Africa",
+    methods: ["Bank Transfer"],
+    countries: ["Nigeria"],
+    brandColor: "#382383",
   },
   {
-    name: 'Quidax',
-    region: 'Africa',
-    methods: ['Bank Transfer'],
-    countries: ['Nigeria'],
+    name: "Yellow Card",
+    logo: icons.yellowCardLogo,
+    region: "Africa",
+    methods: ["Bank Transfer", "Mobile Money"],
+    countries: ["15+ African countries"],
+    brandColor: "#FFCF33",
   },
   {
-    name: 'Yellow Card',
-    region: 'Africa',
-    methods: ['Bank Transfer', 'Mobile Money'],
-    countries: ['15+ African countries'],
+    name: "CashRamp",
+    logo: icons.cashRampLogo,
+    region: "Global",
+    methods: ["P2P", "Bank Transfer"],
+    countries: ["Global"],
+    brandColor: "#00BFA5",
   },
   {
-    name: 'Transfi',
-    region: 'Global',
-    methods: ['Bank Transfer', 'Card'],
-    countries: ['100+ Countries'],
+    name: "Transfi",
+    logo: icons.transfiLogo,
+    region: "Global",
+    methods: ["Bank Transfer", "Card"],
+    countries: ["100+ Countries"],
+    brandColor: "#1A4FD6",
   },
   {
-    name: 'CashRamp',
-    region: 'Global',
-    methods: ['P2P', 'Bank Transfer'],
-    countries: ['Global'],
+    name: "Partna",
+    logo: icons.partnaLogo,
+    region: "Global",
+    methods: ["Card", "Bank Transfer"],
+    countries: ["50+ Countries"],
+    brandColor: "#2C5B75",
+  },
+];
+
+export const techPartners: TechPartner[] = [
+  {
+    name: "Celo",
+    logo: icons.celoLogo,
+    role: "Blockchain Infrastructure",
+    brandColor: "#35D07F",
+  },
+  {
+    name: "Mento Labs",
+    logo: icons.mentoLogo,
+    role: "Stable Asset Protocol",
+    brandColor: "#00D1FF",
+  },
+  {
+    name: "Thirdweb",
+    logo: icons.thirdwebLogo,
+    role: "Smart Contract Scaling",
+    brandColor: "#6B46C1",
   },
 ];
 
@@ -126,7 +160,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "Which digital currencies are supported?",
-    answer: "Currently, we support stablecoin (cUSD) which maintains stable value pegged to the US Dollar. Additional local stablecoins such as Kenya Shilling (cKES), Euro (cEUR), Nigerian Naira (cNGN), South African Rand (cZAR), and Ghanaian Cedis (cGHS) are coming soon. All from Mento labs",
+    answer: "Currently, we support stablecoin (USDm) which maintains stable value pegged to the US Dollar",
   },
   {
     question: "How do I withdraw to my local bank?",
@@ -134,22 +168,10 @@ export const faqs: FAQ[] = [
   },
   {
     question: "Are there any fees?",
-    answer: "We charge minimal fees: 0.2% maintenance fee on member payouts (circle creators pay 0%), $0.50 fixed fee for making circles public, 1% late fee for late payments in circles, and small penalties for early goal withdrawals (1.0% at 0-24% progress, 0.6% at 25-49%, 0.3% at 50-74%, 0.1% at 75-99%, and 0% at 100% completion).",
+    answer: "We charge minimal fees: 1% on payouts ≤$1,000 (or flat $10 for larger payouts), $0.50 to make circles public, 1% late payment fee, $0.20 for external transfers to wallets/exchanges, and small penalties for early goal withdrawals (1.0% at 0-24% progress down to 0% at completion).",
   },
   {
     question: "Is my money safe?",
-    answer: "Yes! We use secure smart contract EOA wallets that you control completely. Battle-tested smart contract systems handle circle operations and individual savings with full transparency. Recovery is easy through email/phone - no complex passwords to remember.",
-  },
-  {
-    question: "Which countries are supported?",
-    answer: "We support 35+ local currencies including NGN, KES, GHS, ZAR, USD, EUR, GBP, CAD, XAF, INR and more through our third-party global partner.",
-  },
-  {
-    question: "How does the app work?",
-    answer: "Circlepot works like any normal savings app. Sign up with email or google, no complex setup needed. All transactions are almost automatic and free. You maintain full control of your funds while enjoying simple, familiar banking.",
-  },
-  {
-    question: "What happens if I miss a payment?",
-    answer: "Our system automatically tries to collect your payment every 12 hours during a grace period (12 hours for daily, and 48 hours for weekly/monthly circles). If you miss the deadline, a 1% late fee is deducted from your security deposit, and your onchain credit score decreases slightly.",
-  },
+    answer: "Yes! We use secure smart contract EOA wallets that you control completely. Battle-tested smart contract systems handle circle operations and individual savings with full transparency. Recovery is easy through email - no complex passwords to remember.",
+  }
 ];

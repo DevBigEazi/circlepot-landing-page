@@ -9,9 +9,18 @@ export interface Currency {
 
 export interface Partner {
   name: string;
+  logo?: string;
   region: string;
   methods: string[];
   countries: string[];
+  brandColor?: string;
+}
+
+export interface TechPartner {
+  name: string;
+  logo: string;
+  role: string;
+  brandColor?: string;
 }
 
 export interface FAQ {

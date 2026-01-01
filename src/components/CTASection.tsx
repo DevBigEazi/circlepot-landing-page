@@ -1,6 +1,6 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import type { ThemeColors } from '../types';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import type { ThemeColors } from "../types";
 
 interface CTASectionProps {
   colors: ThemeColors;
@@ -8,29 +8,57 @@ interface CTASectionProps {
 
 export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
-      <div className="absolute inset-0" style={{ backgroundColor: colors.primary }}></div>
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full" style={{ backgroundColor: colors.secondary }}></div>
-        <div className="absolute bottom-0 left-0 w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full" style={{ backgroundColor: colors.accent }}></div>
-      </div>
-      
-      <div className="max-w-4xl mx-auto px-4 sm:px-5 lg:px-6 text-center relative z-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-6 animate-slideUp px-2">
-          Ready to Start Saving?
-        </h2>
-        <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 sm:mb-10 max-w-2xl mx-auto animate-slideUp delay-100 px-3">
-          Join thousands saving smarter with advanced security and local currency convenience.
-        </p>
-        <button 
-          className="px-8 sm:px-12 md:px-16 py-3 sm:py-4 md:py-5 bg-white rounded-full font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl sm:hover:shadow-3xl transition-all duration-300 hover:scale-105 sm:hover:scale-110 inline-flex items-center gap-2 sm:gap-3 animate-scaleIn delay-200"
-          style={{ color: colors.primary }}
+    <section className="py-16 sm:py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          className="bento-card overflow-hidden relative"
+          style={{
+            backgroundColor: colors.surface,
+            borderColor: colors.border,
+          }}
         >
-          Get Started Free
-          <ArrowRight size={20} className="w-5 h-5" />
-        </button>
-        <div className="mt-6 sm:mt-8 text-white/80 text-xs sm:text-sm">
-          <span className="block sm:inline">✓ Secure account</span> • <span className="block sm:inline">35+ currencies</span> • <span className="block sm:inline">Low maintenance fees</span>
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+            <div
+              className="absolute top-0 right-0 w-1/2 h-full border-l"
+              style={{ borderColor: colors.text }}
+            />
+            <div
+              className="absolute bottom-0 left-0 w-full h-1/2 border-t"
+              style={{ borderColor: colors.text }}
+            />
+          </div>
+
+          <div className="max-w-4xl mx-auto px-6 py-20 sm:py-24 lg:py-32 text-center relative z-10">
+            <h2
+              className="text-5xl sm:text-8xl lg:text-[10rem] font-black mb-8 tracking-tighter leading-[0.85] text-balance"
+              style={{ color: colors.text }}
+            >
+              Ready to <br /> build wealth?
+            </h2>
+            <p
+              className="text-xl sm:text-2xl mb-12 max-w-2xl mx-auto animate-slideUp delay-100 font-bold"
+              style={{ color: colors.textLight }}
+            >
+              Join thousands saving smarter with advanced security and local
+              currency convenience.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <button
+                className="px-12 py-5 rounded-2xl font-black text-lg transition-all duration-300 shadow-2xl hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-3 animate-scaleIn delay-200"
+                style={{ backgroundColor: colors.primary, color: "#000000" }}
+              >
+                Get Started Free
+                <ArrowRight size={24} />
+              </button>
+            </div>
+            <div
+              className="mt-12 text-xs sm:text-sm font-black uppercase tracking-widest opacity-40"
+              style={{ color: colors.text }}
+            >
+              <span>Secure account</span> • <span>35+ currencies</span> •{" "}
+              <span>Low fees</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
