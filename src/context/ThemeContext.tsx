@@ -46,13 +46,13 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   const colors: ThemeColors = isDark
     ? {
-        primary: "#35D07F", // Vibrant Circlepot Green
-        secondary: "#FBCC5C", // Warm Gold
+        primary: "#5C6F2B", // Vibrant Circlepot Green
+        secondary: "#DE802B", // Warm Gold
         accent: "#FFFFFF",
         background: "#0F0F11", // Softer Deep Charcoal
         surface: "#161618", // Refined Gray Surface
-        text: "#F5F5F7", // Apple-style White
-        textLight: "#86868B", // Muted Gray
+        text: "#D8C9A7",
+        textLight: "#EEEEEE", // Muted Gray
         border: "#252529", // Subtle stroke
         infoBg: "#161618",
         successBg: "#05120A",
@@ -62,15 +62,15 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
         hoverBg: "#1D1D1F",
       }
     : {
-        primary: "#35D07F", // Vibrant Circlepot Green
-        secondary: "#FBCC5C", // Warm Gold
+        primary: "#5C6F2B", // Vibrant Circlepot Green
+        secondary: "#DE802B", // Warm Gold
         accent: "#1D1D1F",
         background: "#F9FBF9", // Faint Branded Tint
         surface: "#F1F5F1", // Softer Organic Surface
         text: "#1D1D1F", // Deep Onyx
         textLight: "#4B4B4F", // Better contrast than gray
         border: "#E2E6E2", // Tinted Stroke
-        infoBg: "#F1F5F1",
+        infoBg: "#D8C9A7",
         successBg: "#ECFDF5",
         warningBg: "#FEF9C3",
         successBorder: "#A7F3D0",

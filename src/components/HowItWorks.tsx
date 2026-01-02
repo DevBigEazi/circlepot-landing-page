@@ -111,7 +111,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
 
                 <h3
                   className="text-xl font-bold mb-4 tracking-tight leading-tight"
-                  style={{ color: colors.text }}
+                  style={{ color: colors.secondary }}
                 >
                   {step.title}
                 </h3>

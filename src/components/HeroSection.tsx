@@ -20,17 +20,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section className="relative mt-22 pb-10 lg:pt-24 lg:pb-12 overflow-hidden">
       {/* Structural background elements */}
-      <div className="absolute inset-0 -z-10">
-        <div
-          className="absolute top-0 right-0 w-[50vw] h-[50vh] opacity-[0.03] pointer-events-none"
-          style={{ backgroundColor: colors.primary }}
-        />
-        <div
-          className="absolute bottom-0 left-0 w-[30vw] h-[30vh] opacity-[0.02] pointer-events-none"
-          style={{ backgroundColor: colors.secondary }}
-        />
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-4xl mx-auto text-center mb-16 lg:mb-24">
           <div
@@ -109,7 +98,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="flex-1 w-full text-center lg:text-left">
                 <h2
                   className="text-2xl sm:text-3xl font-bold mb-4"
-                  style={{ color: colors.text }}
+                  style={{ color: colors.secondary }}
                 >
                   Ready to start saving?
                 </h2>

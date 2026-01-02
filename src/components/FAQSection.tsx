@@ -56,7 +56,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({
               className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-sm transition-all hover:scale-105 active:scale-95"
               style={{
                 backgroundColor: colors.surface,
-                color: colors.text,
+                color: colors.secondary,
                 border: `2px solid ${colors.border}`,
               }}
             >

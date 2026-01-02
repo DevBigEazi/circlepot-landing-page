@@ -33,7 +33,9 @@ export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
               className="text-5xl sm:text-8xl lg:text-[10rem] font-black mb-8 tracking-tighter leading-[0.85] text-balance"
               style={{ color: colors.text }}
             >
-              Ready to <br /> build wealth?
+             Ready to build 
+            <br />
+            <span style={{ color: colors.secondary }}>wealth?</span>
             </h2>
             <p
               className="text-xl sm:text-2xl mb-12 max-w-2xl mx-auto animate-slideUp delay-100 font-bold"

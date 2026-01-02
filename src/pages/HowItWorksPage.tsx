@@ -126,13 +126,16 @@ export const HowItWorksPage: React.FC = () => {
                 >
                   <div
                     className="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center"
-                    style={{ backgroundColor: colors.primary }}
+                    style={{
+                      backgroundColor: colors.background,
+                      borderColor: colors.border,
+                    }}
                   >
-                    <Icon className="text-black" size={32} />
+                    <Icon style={{ color: colors.primary }} size={20} />
                   </div>
                   <h3
                     className="text-2xl font-black mb-4"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     {step.title}
                   </h3>
@@ -296,9 +299,9 @@ export const HowItWorksPage: React.FC = () => {
                 <div className="flex items-start gap-4">
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                    style={{ backgroundColor: colors.primary }}
+                    style={{ backgroundColor: colors.background }}
                   >
-                    <Target className="text-black" size={20} />
+                    <Target style={{ color: colors.primary }} size={20} />
                   </div>
                   <div>
                     <div
@@ -318,9 +321,9 @@ export const HowItWorksPage: React.FC = () => {
                 <div className="flex items-start gap-4">
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                    style={{ backgroundColor: colors.primary }}
+                    style={{ backgroundColor: colors.background }}
                   >
-                    <TrendingUp className="text-black" size={20} />
+                    <TrendingUp style={{ color: colors.primary }} size={20} />
                   </div>
                   <div>
                     <div
@@ -341,9 +344,9 @@ export const HowItWorksPage: React.FC = () => {
                 <div className="flex items-start gap-4">
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                    style={{ backgroundColor: colors.primary }}
+                    style={{ backgroundColor: colors.background }}
                   >
-                    <Clock className="text-black" size={20} />
+                    <Clock style={{ color: colors.primary }} size={20} />
                   </div>
                   <div>
                     <div
@@ -592,9 +595,9 @@ export const HowItWorksPage: React.FC = () => {
               <div className="flex items-start gap-6">
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0"
-                  style={{ backgroundColor: colors.primary }}
+                  style={{ backgroundColor: colors.background }}
                 >
-                  <Award className="text-black" size={24} />
+                  <Award style={{ color: colors.primary }} size={24} />
                 </div>
                 <div>
                   <h3
@@ -625,9 +628,9 @@ export const HowItWorksPage: React.FC = () => {
               <div className="flex items-start gap-6">
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0"
-                  style={{ backgroundColor: colors.primary }}
+                  style={{ backgroundColor: colors.background }}
                 >
-                  <TrendingUp className="text-black" size={24} />
+                  <TrendingUp style={{ color: colors.primary }} size={24} />
                 </div>
                 <div>
                   <h3
@@ -696,9 +699,9 @@ export const HowItWorksPage: React.FC = () => {
               <div className="flex items-start gap-6">
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0"
-                  style={{ backgroundColor: colors.primary }}
+                  style={{ backgroundColor: colors.background }}
                 >
-                  <CheckCircle className="text-black" size={24} />
+                  <CheckCircle style={{ color: colors.primary }} size={24} />
                 </div>
                 <div>
                   <h3
@@ -751,9 +754,9 @@ export const HowItWorksPage: React.FC = () => {
             >
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
-                style={{ backgroundColor: colors.primary }}
+                style={{ backgroundColor: colors.background }}
               >
-                <ShieldCheck className="text-black" size={24} />
+                <ShieldCheck style={{ color: colors.primary }} size={24} />
               </div>
               <h3
                 className="text-2xl font-black mb-4"
@@ -780,9 +783,9 @@ export const HowItWorksPage: React.FC = () => {
             >
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
-                style={{ backgroundColor: colors.primary }}
+                style={{ backgroundColor: colors.background }}
               >
-                <Clock className="text-black" size={24} />
+                <Clock style={{ color: colors.primary }} size={24} />
               </div>
               <h3
                 className="text-2xl font-black mb-4"
@@ -810,9 +813,9 @@ export const HowItWorksPage: React.FC = () => {
             >
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
-                style={{ backgroundColor: colors.primary }}
+                style={{ backgroundColor: colors.background }}
               >
-                <Key className="text-black" size={24} />
+                <Key style={{ color: colors.primary }} size={24} />
               </div>
               <h3
                 className="text-2xl font-black mb-4"
