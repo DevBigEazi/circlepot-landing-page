@@ -135,9 +135,9 @@ export const SecurityPage: React.FC = () => {
                 >
                   <div
                     className="w-16 h-16 rounded-2xl mb-6 flex items-center justify-center"
-                    style={{ backgroundColor: colors.primary }}
+                    style={{ backgroundColor: colors.background }}
                   >
-                    <Icon className="text-black" size={32} />
+                    <Icon style={{ color: colors.primary }} size={32} />
                   </div>
                   <h3
                     className="text-2xl font-black mb-4"
@@ -361,9 +361,9 @@ export const SecurityPage: React.FC = () => {
                     <div key={i} className="flex items-start gap-4">
                       <div
                         className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                        style={{ backgroundColor: colors.primary }}
+                        style={{ backgroundColor: colors.background }}
                       >
-                        <Icon className="text-black" size={20} />
+                        <Icon style={{ color: colors.primary }} size={20} />
                       </div>
                       <div>
                         <div

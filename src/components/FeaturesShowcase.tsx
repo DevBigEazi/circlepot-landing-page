@@ -89,7 +89,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({
                   </div>
                   <h3
                     className="text-lg font-bold mb-2 tracking-tight"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     {feature.title}
                   </h3>
