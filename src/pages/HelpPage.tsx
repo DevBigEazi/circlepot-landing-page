@@ -298,7 +298,7 @@ export const HelpPage: React.FC = () => {
                       </div>
                       <span
                         className="text-xl font-bold"
-                        style={{ color: colors.text }}
+                        style={{ color: colors.secondary }}
                       >
                         {faq.question}
                       </span>
@@ -382,7 +382,7 @@ export const HelpPage: React.FC = () => {
                           >
                             <span
                               className="text-xl font-bold pr-8"
-                              style={{ color: colors.text }}
+                              style={{ color: colors.secondary }}
                             >
                               {faq.question}
                             </span>
