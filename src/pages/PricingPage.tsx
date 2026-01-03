@@ -45,7 +45,7 @@ export const PricingPage: React.FC = () => {
             className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9]"
             style={{ color: colors.text }}
           >
-            Simple, Fair Pricing
+            Simple, <br /> <span style={{color: colors.primary}}>Fair Pricing</span>
           </h1>
           <p
             className="text-xl sm:text-2xl font-medium opacity-60 max-w-2xl mx-auto"
@@ -76,7 +76,7 @@ export const PricingPage: React.FC = () => {
             <div className="max-w-xl mx-auto">
               <label
                 className="block text-lg font-bold mb-4"
-                style={{ color: colors.text }}
+                style={{ color: colors.secondary }}
               >
                 Enter Payout Amount
               </label>
@@ -219,7 +219,7 @@ export const PricingPage: React.FC = () => {
                 <div className="flex justify-between items-start mb-3">
                   <h3
                     className="font-black text-lg flex-1"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     {item.name}
                   </h3>

@@ -2,7 +2,6 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-import { icons } from "../data/icons";
 import {
   Users,
   Target,
@@ -306,7 +305,7 @@ export const HowItWorksPage: React.FC = () => {
                   <div>
                     <div
                       className="font-black mb-1"
-                      style={{ color: colors.text }}
+                      style={{ color: colors.secondary }}
                     >
                       Set Your Target
                     </div>
@@ -328,7 +327,7 @@ export const HowItWorksPage: React.FC = () => {
                   <div>
                     <div
                       className="font-black mb-1"
-                      style={{ color: colors.text }}
+                      style={{ color: colors.secondary }}
                     >
                       Earn While You Save
                     </div>
@@ -351,7 +350,7 @@ export const HowItWorksPage: React.FC = () => {
                   <div>
                     <div
                       className="font-black mb-1"
-                      style={{ color: colors.text }}
+                      style={{ color: colors.secondary }}
                     >
                       Flexible Withdrawals
                     </div>
@@ -476,7 +475,7 @@ export const HowItWorksPage: React.FC = () => {
                 />
                 <h3
                   className="text-xl font-black mb-2"
-                  style={{ color: colors.text }}
+                  style={{ color: colors.secondary }}
                 >
                   {benefit.title}
                 </h3>
@@ -547,7 +546,7 @@ export const HowItWorksPage: React.FC = () => {
                   </div>
                   <div
                     className="text-sm font-black mb-1"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     {item.factor}
                   </div>
@@ -602,7 +601,7 @@ export const HowItWorksPage: React.FC = () => {
                 <div>
                   <h3
                     className="text-2xl font-black mb-3"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     Immediate Deployment
                   </h3>
@@ -635,7 +634,7 @@ export const HowItWorksPage: React.FC = () => {
                 <div>
                   <h3
                     className="text-2xl font-black mb-3"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     Shared Returns
                   </h3>
@@ -655,7 +654,7 @@ export const HowItWorksPage: React.FC = () => {
                     <div className="flex-1">
                       <div
                         className="text-sm font-bold opacity-40 mb-1"
-                        style={{ color: colors.text }}
+                        style={{ color: colors.secondary }}
                       >
                         Community Share
                       </div>
@@ -673,7 +672,7 @@ export const HowItWorksPage: React.FC = () => {
                     <div className="flex-1">
                       <div
                         className="text-sm font-bold opacity-40 mb-1"
-                        style={{ color: colors.text }}
+                        style={{ color: colors.secondary }}
                       >
                         Platform Fee
                       </div>
@@ -706,7 +705,7 @@ export const HowItWorksPage: React.FC = () => {
                 <div>
                   <h3
                     className="text-2xl font-black mb-3"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     Automatic & Transparent
                   </h3>
@@ -760,7 +759,7 @@ export const HowItWorksPage: React.FC = () => {
               </div>
               <h3
                 className="text-2xl font-black mb-4"
-                style={{ color: colors.text }}
+                style={{ color: colors.secondary }}
               >
                 Security Collateral
               </h3>
@@ -789,7 +788,7 @@ export const HowItWorksPage: React.FC = () => {
               </div>
               <h3
                 className="text-2xl font-black mb-4"
-                style={{ color: colors.text }}
+                style={{ color: colors.secondary }}
               >
                 Ultimatum Window
               </h3>
@@ -819,7 +818,7 @@ export const HowItWorksPage: React.FC = () => {
               </div>
               <h3
                 className="text-2xl font-black mb-4"
-                style={{ color: colors.text }}
+                style={{ color: colors.secondary }}
               >
                 Smart Login
               </h3>
@@ -832,19 +831,6 @@ export const HowItWorksPage: React.FC = () => {
                 tied to your digital identity—always ensure your email account
                 stays secure and private.
               </p>
-              <div
-                className="flex items-center gap-3 pt-6 border-t border-dashed"
-                style={{ borderColor: colors.border }}
-              >
-                <span className="text-[10px] font-black uppercase tracking-widest opacity-30">
-                  Infrastructure by
-                </span>
-                <img
-                  src={icons.thirdwebLogo}
-                  alt="Thirdweb"
-                  className="h-4 w-auto grayscale opacity-50"
-                />
-              </div>
             </div>
           </div>
         </div>

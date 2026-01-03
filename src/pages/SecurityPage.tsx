@@ -141,7 +141,7 @@ export const SecurityPage: React.FC = () => {
                   </div>
                   <h3
                     className="text-2xl font-black mb-4"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     {layer.title}
                   </h3>
@@ -368,7 +368,7 @@ export const SecurityPage: React.FC = () => {
                       <div>
                         <div
                           className="font-black mb-1"
-                          style={{ color: colors.text }}
+                          style={{ color: colors.secondary }}
                         >
                           {item.title}
                         </div>
@@ -413,7 +413,7 @@ export const SecurityPage: React.FC = () => {
                     <div className="flex-1 pt-2">
                       <div
                         className="font-black text-lg mb-1"
-                        style={{ color: colors.text }}
+                        style={{ color: colors.secondary }}
                       >
                         {item.title}
                       </div>
@@ -576,7 +576,7 @@ export const SecurityPage: React.FC = () => {
                   />
                   <div
                     className="font-black mb-2"
-                    style={{ color: colors.text }}
+                    style={{ color: colors.secondary }}
                   >
                     {item.title}
                   </div>
