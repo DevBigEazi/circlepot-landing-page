@@ -195,7 +195,7 @@ export const Navigation: React.FC = () => {
                 setIsMenuOpen(false);
                 setIsWaitlistOpen(true);
               }}
-              className="w-full py-6 rounded-3xl font-black text-xl text-black transition-all active:scale-95 active:opacity-90"
+              className="w-full py-6 rounded-3xl font-black text-xl text-white transition-all active:scale-95 active:opacity-90"
               style={{ backgroundColor: colors.primary }}
             >
               Join Waitlist
