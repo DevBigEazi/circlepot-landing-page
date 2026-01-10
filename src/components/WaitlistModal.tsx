@@ -29,6 +29,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
+    country: "",
     hasUsedWeb3: "no",
     verificationCode: "",
   });
@@ -166,6 +167,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
               {
                 "Full Name": formData.fullName.trim(),
                 Email: formData.email.trim(),
+                Country: formData.country.trim(),
                 "Wallet Address": account.address,
                 "Has Used Web3 Before":
                   formData.hasUsedWeb3 === "yes" ? "Yes" : "No",
@@ -200,6 +202,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
               setFormData({
                 fullName: "",
                 email: "",
+                country: "",
                 hasUsedWeb3: "no",
                 verificationCode: "",
               });
@@ -389,6 +392,29 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
                     onChange={handleChange}
                     required
                     placeholder="name@example.com"
+                    className="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-primary/20 transition-all outline-none"
+                    style={{
+                      backgroundColor: colors.surface,
+                      borderColor: colors.border,
+                      color: colors.text,
+                    }}
+                  />
+                </div>
+
+                <div>
+                  <label
+                    className="block text-sm font-semibold mb-2"
+                    style={{ color: colors.text }}
+                  >
+                    Country
+                  </label>
+                  <input
+                    type="text"
+                    name="country"
+                    value={formData.country}
+                    onChange={handleChange}
+                    required
+                    placeholder="e.g. Nigeria, USA, UK"
                     className="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-primary/20 transition-all outline-none"
                     style={{
                       backgroundColor: colors.surface,

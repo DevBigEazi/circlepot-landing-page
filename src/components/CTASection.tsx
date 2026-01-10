@@ -47,9 +47,9 @@ export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button
                 className="px-12 py-5 rounded-2xl font-black text-lg transition-all duration-300 shadow-2xl hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-3 animate-scaleIn delay-200"
-                style={{ backgroundColor: colors.primary, color: "#000000" }}
+                style={{ backgroundColor: colors.primary, color: "#fff" }}
               >
-                Get Started Free
+                Get Started Now
                 <ArrowRight size={24} />
               </button>
             </div>
