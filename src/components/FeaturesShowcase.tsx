@@ -2,8 +2,8 @@ import React from "react";
 import { Users, TrendingUp, Globe, ShieldCheck, Key } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 import type { ThemeColors, Currency } from "../types";
-import showcaseLight from "../assets/images/showcase-light.jpeg";
-import showcaseDark from "../assets/images/showcase-dark.jpeg";
+import showcaseLight from "../assets/images/showcase-light.jpg";
+import showcaseDark from "../assets/images/showcase-dark.jpg";
 
 interface FeaturesShowcaseProps {
   colors: ThemeColors;

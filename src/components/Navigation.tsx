@@ -12,6 +12,7 @@ export const Navigation: React.FC = () => {
   const location = useLocation();
 
   const navLinks = [
+    { name: "Home", path: "/" },
     { name: "How It Works", path: "/how-it-works" },
     { name: "Security", path: "/security" },
     { name: "Help", path: "/help" },
