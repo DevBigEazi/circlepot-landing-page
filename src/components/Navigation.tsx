@@ -105,7 +105,7 @@ export const Navigation: React.FC = () => {
 
               <button
                 onClick={() => setIsWaitlistOpen(true)}
-                className="px-5 py-2 sm:px-8 sm:py-3.5 text-sm sm:text-base rounded-2xl font-bold shadow-sm hover:shadow-lg transition-all duration-300 active:scale-95 text-black whitespace-nowrap"
+                className="px-5 py-2 sm:px-8 sm:py-3.5 text-sm sm:text-base rounded-2xl font-bold shadow-sm hover:shadow-lg transition-all duration-300 active:scale-95 text-white whitespace-nowrap"
                 style={{ backgroundColor: colors.primary }}
               >
                 Join Waitlist

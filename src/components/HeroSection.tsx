@@ -37,7 +37,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="font-medium text-xs sm:text-sm tracking-wide uppercase"
               style={{ color: colors.textLight }}
             >
-              Secure Digital Savings • Global Infrastructure
+              Secure Digital Savings • Powered by Blockchain
             </span>
           </div>
 
@@ -149,7 +149,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                             ? colors.primary
                             : colors.border,
                         color:
-                          selectedCurrency === code ? "#000000" : colors.text,
+                          selectedCurrency === code ? "#fff" : colors.text,
                       }}
                     >
                       <span className="text-2xl mb-1">{currency.flag}</span>
@@ -164,7 +164,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   className="w-full py-5 rounded-2xl font-black text-lg sm:text-xl transition-all duration-300 active:scale-95 shadow-lg hover:shadow-2xl"
                   style={{
                     backgroundColor: colors.primary,
-                    color: "#000000",
+                    color: "#fff",
                   }}
                 >
                   Start Saving in {selectedCurrency} →
