@@ -11,6 +11,7 @@ import {
   CheckCircle,
   Award,
 } from "lucide-react";
+import SEO from "../components/SEO";
 
 export const SecurityPage: React.FC = () => {
   const { colors } = useTheme();
@@ -65,6 +66,10 @@ export const SecurityPage: React.FC = () => {
       className="min-h-screen overflow-x-hidden"
       style={{ backgroundColor: colors.background }}
     >
+      <SEO
+        title="Security & Trust - Your Money, Your Control"
+        description="Bank-level security without the complexity. Circlepot uses identity-based access and verified code to keep your community savings safe."
+      />
       <Navigation />
 
       {/* Hero */}

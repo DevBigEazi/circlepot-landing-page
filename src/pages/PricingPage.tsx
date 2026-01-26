@@ -3,6 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { CheckCircle } from "lucide-react";
+import SEO from "../components/SEO";
 
 export const PricingPage: React.FC = () => {
   const { colors } = useTheme();
@@ -22,6 +23,10 @@ export const PricingPage: React.FC = () => {
       className="min-h-screen overflow-x-hidden"
       style={{ backgroundColor: colors.background }}
     >
+      <SEO
+        title="Pricing - Simple, Fair & Transparent Fees"
+        description="No hidden fees. Pay only when you succeed with Circlepot. See our clear fee structure for community savings and personal goals."
+      />
       <Navigation />
 
       {/* Hero */}
@@ -45,7 +50,8 @@ export const PricingPage: React.FC = () => {
             className="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-[0.9]"
             style={{ color: colors.text }}
           >
-            Simple, <br /> <span style={{color: colors.primary}}>Fair Pricing</span>
+            Simple, <br />{" "}
+            <span style={{ color: colors.primary }}>Fair Pricing</span>
           </h1>
           <p
             className="text-xl sm:text-2xl font-medium opacity-60 max-w-2xl mx-auto"

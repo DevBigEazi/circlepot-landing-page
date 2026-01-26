@@ -166,7 +166,7 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/privacy"
                   className="hover:text-emerald-500 transition-colors"
                 >
                   Privacy Policy

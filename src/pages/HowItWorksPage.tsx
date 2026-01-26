@@ -13,6 +13,7 @@ import {
   Clock,
   Award,
 } from "lucide-react";
+import SEO from "../components/SEO";
 
 export const HowItWorksPage: React.FC = () => {
   const { colors } = useTheme();
@@ -56,6 +57,10 @@ export const HowItWorksPage: React.FC = () => {
       className="min-h-screen overflow-x-hidden"
       style={{ backgroundColor: colors.background }}
     >
+      <SEO
+        title="How It Works - Savings Circles & Personal Goals"
+        description="Learn how Circlepot's community savings circles and personal goals work. Build reputation, earn interest, and save securely."
+      />
       <Navigation />
 
       {/* Hero */}

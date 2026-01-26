@@ -2,6 +2,7 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
+import SEO from "../components/SEO";
 
 export const TermsPage: React.FC = () => {
   const { colors } = useTheme();
@@ -11,6 +12,10 @@ export const TermsPage: React.FC = () => {
       className="min-h-screen"
       style={{ backgroundColor: colors.background }}
     >
+      <SEO
+        title="Terms of Service - Usage Agreements"
+        description="Review the terms and conditions for using Circlepot. Understand your responsibilities and our commitment to secure community savings."
+      />
       <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-32 sm:py-40">
         <h1

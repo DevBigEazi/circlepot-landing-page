@@ -3,6 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { ChevronDown, ChevronUp, Search } from "lucide-react";
+import SEO from "../components/SEO";
 
 export const HelpPage: React.FC = () => {
   const { colors } = useTheme();
@@ -196,14 +197,14 @@ export const HelpPage: React.FC = () => {
       ...faq,
       category: cat.name,
       globalIndex: catIndex * 100 + faqIndex,
-    }))
+    })),
   );
 
   const filteredFaqs = searchTerm
     ? allFaqs.filter(
         (faq) =>
           faq.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          faq.answer.toLowerCase().includes(searchTerm.toLowerCase())
+          faq.answer.toLowerCase().includes(searchTerm.toLowerCase()),
       )
     : null;
 
@@ -212,6 +213,10 @@ export const HelpPage: React.FC = () => {
       className="min-h-screen overflow-x-hidden"
       style={{ backgroundColor: colors.background }}
     >
+      <SEO
+        title="Help Center - Frequently Asked Questions"
+        description="Find answers to all your questions about Circlepot. Learn about savings circles, personal goals, deposits, withdrawals, and security."
+      />
       <Navigation />
 
       {/* Hero */}
@@ -285,7 +290,7 @@ export const HelpPage: React.FC = () => {
                     className="flex justify-between items-start w-full p-8 text-left group"
                     onClick={() =>
                       setOpenFaq(
-                        openFaq === faq.globalIndex ? null : faq.globalIndex
+                        openFaq === faq.globalIndex ? null : faq.globalIndex,
                       )
                     }
                   >
@@ -376,7 +381,7 @@ export const HelpPage: React.FC = () => {
                             className="flex justify-between items-start w-full p-8 text-left group"
                             onClick={() =>
                               setOpenFaq(
-                                openFaq === globalIndex ? null : globalIndex
+                                openFaq === globalIndex ? null : globalIndex,
                               )
                             }
                           >
