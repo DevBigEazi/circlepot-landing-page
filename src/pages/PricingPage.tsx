@@ -186,7 +186,7 @@ export const PricingPage: React.FC = () => {
               {
                 name: "Circle Payouts (≤$1,000)",
                 fee: "1%",
-                desc: "Fee on payouts + interest distribution",
+                desc: "Fee on automated payouts",
               },
               {
                 name: "Circle Payouts (>$1,000)",

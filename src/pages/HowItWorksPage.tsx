@@ -29,13 +29,13 @@ export const HowItWorksPage: React.FC = () => {
       icon: CheckCircle,
       title: "Make Regular Contributions",
       description:
-        "Contribute the agreed amount each period. Your money starts earning interest immediately, even while waiting for your payout.",
+        "Contribute the agreed amount each period. Build your reputation and ensure smooth payouts for the whole circle.",
     },
     {
       icon: TrendingUp,
       title: "Receive Your Payout",
       description:
-        "On your scheduled turn, receive the full pot. Your initial collateral deposit and share of earned interest are returned once the full circle is completed.",
+        "On your scheduled turn, receive the full pot. Your initial collateral deposit is returned once the full circle is completed.",
     },
   ];
 
@@ -91,8 +91,8 @@ export const HowItWorksPage: React.FC = () => {
             className="text-xl sm:text-2xl font-medium opacity-60 max-w-2xl mx-auto"
             style={{ color: colors.text }}
           >
-            Save together with friends, family, or community members. Earn
-            interest while you wait. Get paid when it's your turn.
+            Save together with friends, family, or community members. Simple,
+            transparent, and rewarding.
           </p>
         </div>
       </section>
@@ -256,8 +256,8 @@ export const HowItWorksPage: React.FC = () => {
                     className="text-sm font-bold opacity-60"
                     style={{ color: colors.text }}
                   >
-                    Receive your payout (on your turn) + collateral return and
-                    earned interest (at circle completion)
+                    Receive your payout (on your turn) + collateral return (at
+                    circle completion)
                   </div>
                 </div>
               </div>
@@ -576,15 +576,14 @@ export const HowItWorksPage: React.FC = () => {
               className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
-              Your Money Earns While You Wait
+              How Savings Goals Earn Interest
             </h2>
             <p
               className="text-lg font-medium opacity-60"
               style={{ color: colors.text }}
             >
-              Unlike traditional savings circles where money sits idle,
-              Circlepot puts every dollar to work immediately in secure savings
-              accounts.
+              Your personal savings goals aren't just sitting there. Circlepot
+              puts every dollar to work immediately in secure savings accounts.
             </p>
           </div>
 
@@ -614,9 +613,9 @@ export const HowItWorksPage: React.FC = () => {
                     className="font-medium opacity-60 leading-relaxed"
                     style={{ color: colors.text }}
                   >
-                    When you join a circle or create a savings goal, your money
-                    is instantly placed in trusted, secure savings accounts. It
-                    starts earning interest from day one.
+                    When you create a savings goal, your money is instantly
+                    placed in trusted, secure savings accounts. It starts
+                    earning interest from day one.
                   </p>
                 </div>
               </div>
@@ -641,16 +640,15 @@ export const HowItWorksPage: React.FC = () => {
                     className="text-2xl font-black mb-3"
                     style={{ color: colors.secondary }}
                   >
-                    Shared Returns
+                    Transparent Returns
                   </h3>
                   <p
                     className="font-medium opacity-60 leading-relaxed mb-4"
                     style={{ color: colors.text }}
                   >
-                    At the end of a circle, all earned interest is shared among
-                    members based on their payment performance. This is
-                    distributed along with the return of your initial collateral
-                    deposit once the full circle is completed.
+                    For personal savings goals, earned interest is shared fairly
+                    between you and the platform. You keep the lion's share of
+                    everything your money earns.
                   </p>
                   <div
                     className="flex items-center gap-4 p-4 rounded-xl"
@@ -718,9 +716,9 @@ export const HowItWorksPage: React.FC = () => {
                     className="font-medium opacity-60 leading-relaxed"
                     style={{ color: colors.text }}
                   >
-                    All interest calculations and distributions happen
-                    automatically when your circle completes. No complex
-                    spreadsheets or manual tracking needed.
+                    All interest calculations happen automatically. Your
+                    earnings are added to your target balance continuously. No
+                    complex spreadsheets or manual tracking needed.
                   </p>
                 </div>
               </div>
@@ -803,8 +801,7 @@ export const HowItWorksPage: React.FC = () => {
               >
                 Circles have a fixed time to fill up (7-14 days). If a circle
                 doesn't reach 60% capacity, it becomes "DEAD." Members can
-                instantly withdraw their full initial deposit, while any small
-                interest earned during the wait is captured by the platform.
+                instantly withdraw their full initial deposit without any fees.
               </p>
             </div>
 

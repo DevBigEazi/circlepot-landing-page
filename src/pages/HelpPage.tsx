@@ -52,7 +52,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "How do I join a circle?",
           answer:
-            "Browse available circles or join via an invitation link. You'll need to deposit one contribution amount plus a small buffer to join. Your money starts earning interest immediately.",
+            "Browse available circles or join via an invitation link. You'll need to deposit one contribution amount plus a small buffer to join. You build your reputation immediately.",
         },
         {
           question: "How much do I need to deposit to join?",
@@ -77,12 +77,12 @@ export const HelpPage: React.FC = () => {
         {
           question: "What happens to my money while waiting?",
           answer:
-            "Your money is automatically placed in secure savings accounts and earns interest continuously from the moment you join until the circle completes.",
+            "Your money is held securely in the smart contract until the circle completes. This ensures all payouts are fully funded and transparent.",
         },
         {
           question: "What happens if a circle doesn't fill up?",
           answer:
-            "Circles need 60% of max capacity to start within 7-14 days. If this isn't met, the circle becomes inactive. Members can withdraw their principal, and the platform keeps the interest earned during the pending phase.",
+            "Circles need 60% of max capacity to start within 7-14 days. If this isn't met, the circle becomes inactive and members can withdraw their principal completely.",
         },
         {
           question: "Can I participate in multiple circles?",
@@ -171,12 +171,12 @@ export const HelpPage: React.FC = () => {
         {
           question: "How does interest work?",
           answer:
-            "Your money earns interest in secure savings accounts from the moment you deposit it. At circle completion, 90% of interest is shared among members (distributed when your collateral deposit is returned) based on payment performance, and 10% supports the platform.",
+            "For personal savings goals, your money earns interest in secure savings accounts from the moment you deposit it. This interest is shared between you (90%) and the platform (10%). Savings circles focus on community saving and reputation building.",
         },
         {
           question: "What is Performance Points?",
           answer:
-            "You earn +10 points for every on-time contribution. These determine your share of earned interest and fees collected. Late payments earn no points.",
+            "You earn +10 points for every on-time contribution. These determine your digital reputation score and unlock better payout positions in future circles. Late payments earn no points.",
         },
         {
           question: "How does my reputation score work?",

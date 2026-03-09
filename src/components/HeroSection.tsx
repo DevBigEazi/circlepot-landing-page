@@ -148,8 +148,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                           selectedCurrency === code
                             ? colors.primary
                             : colors.border,
-                        color:
-                          selectedCurrency === code ? "#fff" : colors.text,
+                        color: selectedCurrency === code ? "#fff" : colors.text,
                       }}
                     >
                       <span className="text-2xl mb-1">{currency.flag}</span>
@@ -220,13 +219,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             Powered by secure global infrastructure
           </span>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 hover:opacity-100 transition-all duration-700">
-            <img src={icons.celoLogo} alt="Celo" className="h-6 w-auto" />
-            <img src={icons.mentoLogo} alt="Mento" className="h-6 w-auto" />
-            <img
-              src={icons.thirdwebLogo}
-              alt="Thirdweb"
-              className="h-7 w-auto"
-            />
+            <img src={icons.avaxLogo} alt="Avalanche" className="h-6 w-auto" />
+            <img src={icons.dynamicLogo} alt="Dynamic" className="h-7 w-auto" />
+            <img src={icons.zerodevLogo} alt="ZeroDev" className="h-6 w-auto" />
           </div>
         </div>
       </div>

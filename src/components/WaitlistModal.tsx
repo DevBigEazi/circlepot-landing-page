@@ -39,7 +39,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus | null>(null);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -50,7 +50,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
 
   const checkExists = async (
     field: string,
-    value: string
+    value: string,
   ): Promise<boolean> => {
     const API_ID = import.meta.env.VITE_SHEETDB_API;
     if (!API_ID) return false;
@@ -58,14 +58,14 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
     try {
       const response = await fetch(
         `https://sheetdb.io/api/v1/${API_ID}/search?${field}=${encodeURIComponent(
-          value.trim()
+          value.trim(),
         )}`,
         {
           method: "GET",
           headers: {
             Accept: "application/json",
           },
-        }
+        },
       );
 
       if (!response.ok) return false;
@@ -119,7 +119,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
       // 1. Verify OTP and connect wallet
       const loginSuccess = await loginWithEmail(
         formData.email,
-        formData.verificationCode
+        formData.verificationCode,
       );
 
       if (!loginSuccess) {
@@ -146,7 +146,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
           // Check if wallet address already exists
           const walletExists = await checkExists(
             "Wallet Address",
-            account.address
+            account.address,
           );
 
           if (walletExists) {
@@ -280,7 +280,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
               style={{ color: colors.text }}
             >
               {step === "otp"
-                ? `Enter the code sent to ${formData.email} by Thirdweb`
+                ? `Enter the code sent to ${formData.email}`
                 : "Be the first to know when we launch"}
             </p>
           </div>

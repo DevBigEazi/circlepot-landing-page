@@ -1,5 +1,5 @@
-import type { Currency, Partner, TechPartner, FAQ } from '../types/index';
-import { icons } from './icons';
+import type { Currency, Partner, TechPartner, FAQ } from "../types/index";
+import { icons } from "./icons";
 
 export const currencies: Record<string, Currency> = {
   NGN: {
@@ -7,77 +7,77 @@ export const currencies: Record<string, Currency> = {
     symbol: "₦",
     flag: "🇳🇬",
     banks: ["GTBank", "Zenith", "Access Bank"],
-    mentoToken: "cNGN",
+    stablecoinSymbol: "USDT",
   },
   KES: {
     name: "Kenyan Shilling",
     symbol: "KSh",
     flag: "🇰🇪",
     banks: ["Safaricom M-Pesa", "Equity Bank", "KCB"],
-    mentoToken: "cKES",
+    stablecoinSymbol: "USDT",
   },
   GHS: {
     name: "Ghanaian Cedi",
     symbol: "GH₵",
     flag: "🇬🇭",
     banks: ["MTN Mobile Money", "GCB Bank", "Absa Bank"],
-    mentoToken: "cGHS",
+    stablecoinSymbol: "USDT",
   },
   UGX: {
     name: "Ugandan Shilling",
     symbol: "USh",
     flag: "🇺🇬",
     banks: ["Stanbic Bank", "Centenary Bank", "DFCU Bank"],
-    mentoToken: "USDm",
+    stablecoinSymbol: "USDT",
   },
   ZAR: {
     name: "South African Rand",
     symbol: "R",
     flag: "🇿🇦",
     banks: ["Standard Bank", "FNB", "Nedbank"],
-    mentoToken: "cZAR",
+    stablecoinSymbol: "USDT",
   },
   USD: {
     name: "US Dollar",
     symbol: "$",
     flag: "🇺🇸",
     banks: ["Bank of America", "Chase", "Wells Fargo"],
-    mentoToken: "USDm",
+    stablecoinSymbol: "USDT",
   },
   EUR: {
     name: "Euro",
     symbol: "€",
     flag: "🇪🇺",
     banks: ["Deutsche Bank", "BNP Paribas", "Santander"],
-    mentoToken: "cEUR",
+    stablecoinSymbol: "USDT",
   },
   GBP: {
     name: "British Pound",
     symbol: "£",
     flag: "🇬🇧",
     banks: ["Barclays", "HSBC", "Lloyds"],
-    mentoToken: "USDm",
+    stablecoinSymbol: "USDT",
   },
   CAD: {
     name: "Canadian Dollar",
     symbol: "C$",
     flag: "🇨🇦",
     banks: ["RBC", "TD Bank", "Scotiabank"],
-    mentoToken: "USDm",
+    stablecoinSymbol: "USDT",
   },
   XAF: {
     name: "CFA Franc",
     symbol: "FCFA",
     flag: "🇨🇲",
     banks: ["Ecobank", "UBA", "Société Générale"],
-    mentoToken: "USDm",
+    stablecoinSymbol: "USDT",
   },
   INR: {
     name: "Indian Rupee",
     symbol: "₹",
     flag: "🇮🇳",
     banks: ["SBI", "HDFC", "ICICI"],
-    mentoToken: "USDm",
+    stablecoinSymbol: "USDT",
   },
 };
 
@@ -134,44 +134,49 @@ export const partners: Partner[] = [
 
 export const techPartners: TechPartner[] = [
   {
-    name: "Celo",
-    logo: icons.celoLogo,
+    name: "Avalanche",
+    logo: icons.avaxLogo,
     role: "Blockchain Infrastructure",
-    brandColor: "#35D07F",
+    brandColor: "#E84142",
   },
   {
-    name: "Mento Labs",
-    logo: icons.mentoLogo,
-    role: "Stable Asset Protocol",
-    brandColor: "#00D1FF",
+    name: "Dynamic",
+    logo: icons.dynamicLogo,
+    role: "Authentication & Wallet SDK",
+    brandColor: "#000000",
   },
   {
-    name: "Thirdweb",
-    logo: icons.thirdwebLogo,
-    role: "Smart Contract Scaling",
-    brandColor: "#6B46C1",
+    name: "ZeroDev",
+    logo: icons.zerodevLogo,
+    role: "Smart Account Infrastructure",
+    brandColor: "#5F5CF1",
   },
 ];
 
 export const faqs: FAQ[] = [
   {
     question: "How do I add money to my account?",
-    answer: "Use our third-party partner networks like Fonbnk, Yellow Card, Quidax, or Transfi to deposit via bank transfer, mobile money (M-Pesa, MTN Momo), or cards. Your local currency is converted to stablecoin (digital dollar on blockchain) automatically when you deposit through our partners.",
+    answer:
+      "Use our third-party partner networks like Fonbnk, Yellow Card, Quidax, or Transfi to deposit via bank transfer, mobile money (M-Pesa, MTN Momo), or cards. Your local currency is converted to USDT (digital dollar on Avalanche) automatically when you deposit through our partners.",
   },
   {
     question: "Which digital currencies are supported?",
-    answer: "Currently, we support stablecoin (USDm) which maintains stable value pegged to the US Dollar",
+    answer:
+      "Currently, we support USDT which maintains stable value pegged to the US Dollar on the Avalanche blockchain.",
   },
   {
     question: "How do I withdraw to my local bank?",
-    answer: "Convert your digital currency (stablecoin) back to local currency through our third-party partners. Withdraw directly to your bank account, mobile money wallet, or digital wallet. All withdrawals are instant.",
+    answer:
+      "Convert your digital currency (USDT) back to local currency through our third-party partners. Withdraw directly to your bank account, mobile money wallet, or digital wallet. All withdrawals are instant.",
   },
   {
     question: "Are there any fees?",
-    answer: "We charge minimal fees: 1% on payouts ≤$1,000 (or flat $10 for larger payouts), $0.50 to make circles public, 1% late payment fee, $0.20 for external transfers to wallets/exchanges, and small penalties for early goal withdrawals (1.0% at 0-24% progress down to 0% at completion).",
+    answer:
+      "We charge minimal fees: 1% on payouts ≤$1,000 (or flat $10 for larger payouts), $0.50 to make circles public, 1% late payment fee, $0.20 for external transfers to wallets/exchanges, and small penalties for early goal withdrawals (1.0% at 0-24% progress down to 0% at completion).",
   },
   {
     question: "Is my money safe?",
-    answer: "Yes! We use secure smart contract EOA wallets that you control completely. Battle-tested smart contract systems handle circle operations and individual savings with full transparency. Recovery is easy through email - no complex passwords to remember.",
-  }
+    answer:
+      "Yes! We use secure ZeroDev smart accounts powered by Avalanche. You maintain full control over your funds with seamless login via email or Google thanks to Dynamic xyz. Battle-tested systems handle all operations with full transparency.",
+  },
 ];

@@ -39,7 +39,7 @@ export const SecurityPage: React.FC = () => {
       icon: Award,
       title: "Trusted Partners",
       description:
-        "Built on Celo's secure infrastructure and powered by industry-leading technology from Mento Labs and Thirdweb.",
+        "Built on Avalanche's secure infrastructure and powered by industry-leading technology from Dynamic and ZeroDev.",
     },
   ];
 
@@ -467,22 +467,22 @@ export const SecurityPage: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                name: "Celo",
-                logo: icons.celoLogo,
+                name: "Avalanche",
+                logo: icons.avaxLogo,
                 role: "Secure Infrastructure",
-                desc: "Trusted by millions worldwide for fast, secure digital transactions",
+                desc: "Trusted worldwide for high-performance, secure digital transactions",
               },
               {
-                name: "Mento Labs",
-                logo: icons.mentoLogo,
-                role: "Stable Digital Dollars",
-                desc: "Ensuring your savings maintain stable value",
+                name: "Dynamic",
+                logo: icons.dynamicLogo,
+                role: "Seamless Identity",
+                desc: "Enterprise-grade authentication with email and social login",
               },
               {
-                name: "Thirdweb",
-                logo: icons.thirdwebLogo,
-                role: "Simple & Secure Access",
-                desc: "Enterprise-grade security with consumer-friendly experience",
+                name: "ZeroDev",
+                logo: icons.zerodevLogo,
+                role: "Smart Account Security",
+                desc: "The gold standard in smart account infrastructure and recovery",
               },
             ].map((partner, i) => (
               <div

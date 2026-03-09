@@ -39,7 +39,7 @@ export const TermsPage: React.FC = () => {
             <p>
               Welcome to Circlepot. By using our platform, you agree to these
               terms. Circlepot is a decentralized savings platform powered by
-              Celo L2 and Mento stablecoins.
+              Avalanche and USDT stablecoins.
             </p>
           </section>
           <section className="mb-12">

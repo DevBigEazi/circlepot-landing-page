@@ -13,69 +13,69 @@ export const CurrenciesSection: React.FC<CurrenciesSectionProps> = ({
   const futureMentoTokens = [
     {
       icon: icons.cKES,
-      name: "Celo Kenya Shilling (cKES)",
-      desc: "Pegged to Kenyan Shilling",
+      name: "Kenyan Shilling (KES)",
+      desc: "Via Local Partners",
     },
-    { icon: icons.cEUR, name: "Celo Euro (cEUR)", desc: "Pegged to Euro" },
+    { icon: icons.cEUR, name: "Euro (EUR)", desc: "Global Settlement" },
     {
       icon: icons.cNGN,
-      name: "Celo Nigerian Naira (cNGN)",
-      desc: "Pegged to Nigerian Naira",
+      name: "Nigerian Naira (NGN)",
+      desc: "Via Bank Transfer",
     },
     {
       icon: icons.cZAR,
-      name: "Celo South African Rand (cZAR)",
-      desc: "Pegged to South African Rand",
+      name: "South African Rand (ZAR)",
+      desc: "Via Local Partners",
     },
     {
       icon: icons.cGHS,
-      name: "Celo Ghanaian Cedis (cGHS)",
-      desc: "Pegged to Ghanaian Cedis",
+      name: "Ghanaian Cedi (GHS)",
+      desc: "Via Mobile Money",
     },
     {
       icon: icons.cREAL,
-      name: "Celo Brazilian Real (cREAL)",
-      desc: "Pegged to Brazilian Real",
+      name: "Brazilian Real (BRL)",
+      desc: "Via Local Partners",
     },
     {
       icon: icons.eXOF,
-      name: "Celo West African Franc (eXOF)",
-      desc: "Pegged to West African CFA Franc",
+      name: "West African CFA (XOF)",
+      desc: "Via Local Partners",
     },
     {
       icon: icons.cAUD,
-      name: "Celo Australian Dollar (cAUD)",
-      desc: "Pegged to Australian Dollar",
+      name: "Australian Dollar (AUD)",
+      desc: "Global Settlement",
     },
     {
       icon: icons.cCAD,
-      name: "Celo Canadian Dollar (cCAD)",
-      desc: "Pegged to Canadian Dollar",
+      name: "Canadian Dollar (CAD)",
+      desc: "Global Settlement",
     },
     {
       icon: icons.cCHF,
-      name: "Celo Swiss Franc (cCHF)",
-      desc: "Pegged to Swiss Franc",
+      name: "Swiss Franc (CHF)",
+      desc: "Global Settlement",
     },
     {
       icon: icons.cCOP,
-      name: "Celo Colombian Peso (cCOP)",
-      desc: "Pegged to Colombian Peso",
+      name: "Colombian Peso (COP)",
+      desc: "Via Local Partners",
     },
     {
       icon: icons.cJPY,
-      name: "Celo Japanese Yen (cJPY)",
-      desc: "Pegged to Japanese Yen",
+      name: "Japanese Yen (JPY)",
+      desc: "Global Settlement",
     },
     {
       icon: icons.cGBP,
-      name: "Celo British Pound (cGBP)",
-      desc: "Pegged to British Pound",
+      name: "British Pound (GBP)",
+      desc: "Global Settlement",
     },
     {
       icon: icons.PUSO,
-      name: "Philippine Peso (PUSO)",
-      desc: "Pegged to Philippine Peso",
+      name: "Philippine Peso (PHP)",
+      desc: "Via Local Partners",
     },
   ];
 
@@ -83,8 +83,8 @@ export const CurrenciesSection: React.FC<CurrenciesSectionProps> = ({
   const groupedTokens = {
     "African Currencies": futureMentoTokens.filter((token) =>
       ["cKES", "cNGN", "cZAR", "cGHS", "eXOF"].some((code) =>
-        token.name.includes(code)
-      )
+        token.name.includes(code),
+      ),
     ),
     "Global Currencies": futureMentoTokens.filter((token) =>
       [
@@ -97,7 +97,7 @@ export const CurrenciesSection: React.FC<CurrenciesSectionProps> = ({
         "cJPY",
         "cGBP",
         "PUSO",
-      ].some((code) => token.name.includes(code))
+      ].some((code) => token.name.includes(code)),
     ),
   };
 
@@ -228,8 +228,8 @@ export const CurrenciesSection: React.FC<CurrenciesSectionProps> = ({
               >
                 <div className="flex flex-col items-center text-center">
                   <img
-                    src={icons.USDm}
-                    alt="USDm"
+                    src={icons.usdtLogo}
+                    alt="USDT"
                     className="h-14 w-14 sm:h-16 sm:w-16 mb-3 sm:mb-4"
                   />
                   <div className="mb-2 sm:mb-3">
@@ -237,7 +237,7 @@ export const CurrenciesSection: React.FC<CurrenciesSectionProps> = ({
                       className="font-bold text-base sm:text-lg"
                       style={{ color: colors.text }}
                     >
-                      Celo Dollar (USDm)
+                      Digital Dollar (USDT)
                     </div>
                     <div
                       className="text-xs sm:text-sm font-medium"

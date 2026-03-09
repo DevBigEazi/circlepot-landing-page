@@ -4,7 +4,7 @@ export interface Currency {
   flag?: string;
   icon?: string;
   banks: string[];
-  mentoToken: string;
+  stablecoinSymbol: string;
 }
 
 export interface Partner {

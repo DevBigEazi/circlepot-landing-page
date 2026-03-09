@@ -13,9 +13,12 @@ import cCOP from "../assets/icons/cCOP.svg";
 import cJPY from "../assets/icons/cJPY.svg";
 import cGBP from "../assets/icons/cGBP.svg";
 import PUSO from "../assets/icons/PUSO.svg";
-import thirdwebLogo from "../assets/icons/thirdweb-logo.svg";
 import mentoLogo from "../assets/icons/mento-logo.svg";
 import celoLogo from "../assets/icons/celo-logo.avif";
+import avaxLogo from "../assets/icons/avax-logo.svg";
+import usdtLogo from "../assets/icons/tether-usdt-logo.svg";
+import dynamicLogo from "../assets/icons/dynamic-xyz.avif";
+import zerodevLogo from "../assets/icons/zerodev.svg";
 import fonbnkLogo from "../assets/icons/fonbnk-logo.svg";
 import yellowCardLogo from "../assets/icons/yellow-card-logo.svg";
 import quidaxLogo from "../assets/icons/quidax-logo.svg";
@@ -39,9 +42,12 @@ export const icons = {
   cJPY,
   cGBP,
   PUSO,
-  thirdwebLogo,
   mentoLogo,
   celoLogo,
+  avaxLogo,
+  usdtLogo,
+  dynamicLogo,
+  zerodevLogo,
   fonbnkLogo,
   yellowCardLogo,
   quidaxLogo,

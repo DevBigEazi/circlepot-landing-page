@@ -47,7 +47,7 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               className="text-lg font-bold mb-8 max-w-xs"
               style={{ color: colors.textLight }}
             >
-              The global engine for community wealth. Built on Celo.
+              The global engine for community wealth. Built on Avalanche.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => {
@@ -196,11 +196,19 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               Building on
             </span>
             <div className="flex items-center gap-10 opacity-70 hover:opacity-100 transition-all duration-700">
-              <img src={icons.celoLogo} alt="Celo" className="h-6 w-auto" />
-              <img src={icons.mentoLogo} alt="Mento" className="h-6 w-auto" />
               <img
-                src={icons.thirdwebLogo}
-                alt="Thirdweb"
+                src={icons.avaxLogo}
+                alt="Avalanche"
+                className="h-6 w-auto"
+              />
+              <img
+                src={icons.dynamicLogo}
+                alt="Dynamic"
+                className="h-6 w-auto"
+              />
+              <img
+                src={icons.zerodevLogo}
+                alt="ZeroDev"
                 className="h-6 w-auto"
               />
             </div>

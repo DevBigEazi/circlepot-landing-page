@@ -109,7 +109,11 @@ export const PrivacyPage: React.FC = () => {
           <p className="mb-4">We use the following third-party services:</p>
           <ul className="list-disc pl-6 mb-4 space-y-2">
             <li>
-              <strong>Thirdweb:</strong> For wallet authentication and
+              <strong>Dynamic:</strong> For authentication and secure wallet
+              access
+            </li>
+            <li>
+              <strong>ZeroDev:</strong> For smart account infrastructure and
               blockchain interactions
             </li>
             <li>

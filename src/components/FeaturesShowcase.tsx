@@ -29,7 +29,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({
     {
       icon: Globe,
       title: "Save From Anywhere",
-      desc: `Save in Digital Stablecoins (${currentCurrency.mentoToken}), spend in ${currentCurrency.name}`,
+      desc: `Save in Digital Stablecoins (${currentCurrency.stablecoinSymbol}), spend in ${currentCurrency.name}`,
     },
     {
       icon: Users,
@@ -39,7 +39,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({
     {
       icon: Key,
       title: "Earn Interest Always",
-      desc: "All contributions - whether in circles or personal goals - earn yield which is paid out upon completion.",
+      desc: "Personal goal contributions earn yield which is paid out upon completion.",
     },
   ];
 
