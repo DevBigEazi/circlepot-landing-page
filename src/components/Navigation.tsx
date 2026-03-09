@@ -103,6 +103,7 @@ export const Navigation: React.FC = () => {
                 )}
               </button>
 
+              {/* Previous Waitlist Button
               <button
                 onClick={() => setIsWaitlistOpen(true)}
                 className="px-5 py-2 sm:px-8 sm:py-3.5 text-sm sm:text-base rounded-2xl font-bold shadow-sm hover:shadow-lg transition-all duration-300 active:scale-95 text-white whitespace-nowrap"
@@ -110,6 +111,17 @@ export const Navigation: React.FC = () => {
               >
                 Join Waitlist
               </button>
+              */}
+
+              <a
+                href="https://test.circlepot.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2 sm:px-8 sm:py-3.5 text-sm sm:text-base rounded-2xl font-bold shadow-sm hover:shadow-lg transition-all duration-300 active:scale-95 text-white whitespace-nowrap flex items-center justify-center"
+                style={{ backgroundColor: colors.primary }}
+              >
+                Launch App
+              </a>
             </div>
 
             {/* Mobile Actions (Visible only on very small screens) */}
@@ -190,6 +202,7 @@ export const Navigation: React.FC = () => {
             className="mt-8 sm:hidden space-y-4 pt-8 border-t"
             style={{ borderColor: colors.border }}
           >
+            {/* Previous Waitlist Button
             <button
               onClick={() => {
                 setIsMenuOpen(false);
@@ -200,6 +213,16 @@ export const Navigation: React.FC = () => {
             >
               Join Waitlist
             </button>
+            */}
+            <a
+              href="https://test.circlepot.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-6 rounded-3xl font-black text-xl text-white transition-all active:scale-95 active:opacity-90 flex items-center justify-center"
+              style={{ backgroundColor: colors.primary }}
+            >
+              Launch App
+            </a>
           </div>
 
           <div className="mt-auto pb-12 text-center opacity-30">

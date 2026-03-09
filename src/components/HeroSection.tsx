@@ -159,15 +159,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   ))}
                 </div>
 
+                {/* Previous waitlist button
                 <button
-                  className="w-full py-5 rounded-2xl font-black text-lg sm:text-xl transition-all duration-300 active:scale-95 shadow-lg hover:shadow-2xl"
+                   className="w-full py-5 rounded-2xl font-black text-lg sm:text-xl transition-all duration-300 active:scale-95 shadow-lg hover:shadow-2xl"
+                   style={{
+                     backgroundColor: colors.primary,
+                     color: "#fff",
+                   }}
+                 >
+                   Start Saving in {selectedCurrency} →
+                 </button>
+                */}
+                <a
+                  href="https://test.circlepot.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-5 rounded-2xl font-black text-lg sm:text-xl transition-all duration-300 active:scale-95 shadow-lg hover:shadow-2xl flex items-center justify-center text-white"
                   style={{
                     backgroundColor: colors.primary,
-                    color: "#fff",
                   }}
                 >
                   Start Saving in {selectedCurrency} →
-                </button>
+                </a>
               </div>
             </div>
           </div>

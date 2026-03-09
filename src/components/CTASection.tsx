@@ -33,9 +33,9 @@ export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
               className="text-5xl sm:text-8xl lg:text-[10rem] font-black mb-8 tracking-tighter leading-[0.85] text-balance"
               style={{ color: colors.text }}
             >
-             Ready to build 
-            <br />
-            <span style={{ color: colors.secondary }}>wealth?</span>
+              Ready to build
+              <br />
+              <span style={{ color: colors.secondary }}>wealth?</span>
             </h2>
             <p
               className="text-xl sm:text-2xl mb-12 max-w-2xl mx-auto animate-slideUp delay-100 font-bold"
@@ -45,6 +45,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
               currency convenience.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
+              {/* Previous Waitlist button
               <button
                 className="px-12 py-5 rounded-2xl font-black text-lg transition-all duration-300 shadow-2xl hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-3 animate-scaleIn delay-200"
                 style={{ backgroundColor: colors.primary, color: "#fff" }}
@@ -52,6 +53,17 @@ export const CTASection: React.FC<CTASectionProps> = ({ colors }) => {
                 Get Started Now
                 <ArrowRight size={24} />
               </button>
+              */}
+              <a
+                href="https://test.circlepot.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-12 py-5 rounded-2xl font-black text-lg transition-all duration-300 shadow-2xl hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-3 animate-scaleIn delay-200 text-white"
+                style={{ backgroundColor: colors.primary }}
+              >
+                Get Started Now
+                <ArrowRight size={24} />
+              </a>
             </div>
             <div
               className="mt-12 text-xs sm:text-sm font-black uppercase tracking-widest opacity-40"

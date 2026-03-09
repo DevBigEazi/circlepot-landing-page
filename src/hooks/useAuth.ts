@@ -144,7 +144,7 @@ export const useEmailAuth = (): UseEmailAuthReturn => {
   );
 
   const loginWithEmail = useCallback(
-    async (email: string, verificationCode: string): Promise<boolean> => {
+    async (_email: string, verificationCode: string): Promise<boolean> => {
       try {
         setIsLoading(true);
         clearError();
