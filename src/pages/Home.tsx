@@ -25,8 +25,8 @@ export const Home: React.FC = () => {
       style={{ backgroundColor: colors.background }}
     >
       <SEO
-        title="Circlepot - Secure & Transparent Community Savings"
-        description="The modern way to save together. Join community savings circles, earn interest, and build your digital reputation with Circlepot."
+        title="Circlepot - Secure & Transparent ROSCAs"
+        description="The modern way to save together. Join ROSCAs, earn interest, and build your digital reputation with Circlepot."
         faqData={faqs}
       />
       <Navigation />

@@ -44,7 +44,7 @@ export const PrivacyPage: React.FC = () => {
           <ul className="list-disc pl-6 mb-4 space-y-2">
             <li>Create and secure your account</li>
             <li>Process savings transactions and payouts</li>
-            <li>Send important notifications about your circles and goals</li>
+            <li>Send important notifications about your ROSCAs and goals</li>
             <li>Provide customer support</li>
             <li>Improve our services and user experience</li>
             <li>Comply with legal obligations</li>
@@ -216,7 +216,7 @@ export const PrivacyPage: React.FC = () => {
     >
       <SEO
         title="Privacy Policy - Data Protection & Security"
-        description="Learn how Circlepot collects, uses, and safeguards your data. Experience community savings with transparency and privacy."
+        description="Learn how Circlepot collects, uses, and safeguards your data. Experience ROSCAs with transparency and privacy."
       />
       <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-32 sm:py-40">

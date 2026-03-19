@@ -42,17 +42,17 @@ export const HelpPage: React.FC = () => {
       ],
     },
     {
-      name: "Savings Circles",
+      name: "ROSCAs",
       faqs: [
         {
-          question: "What is a savings circle?",
+          question: "What is a ROSCA?",
           answer:
-            "A savings circle is a group of 5-20 people who contribute the same amount regularly (daily, weekly, or monthly). Each round, one member receives the full pot until everyone gets their turn. It's like a traditional community savings group, but automated and secure with instant payouts.",
+            "A ROSCA is a group of 5-20 people who contribute the same amount regularly (daily, weekly, or monthly). Each round, one member receives the full pot until everyone gets their turn. It's like a traditional community savings group (Rotating Savings and Credit Association), but automated and secure with instant payouts.",
         },
         {
-          question: "How do I join a circle?",
+          question: "How do I join a ROSCA?",
           answer:
-            "Browse available circles or join via an invitation link. You'll need to deposit one contribution amount plus a small buffer to join. You build your reputation immediately.",
+            "Browse available ROSCAs or join via an invitation link. You'll need to deposit one contribution amount plus a small buffer to join. You build your reputation immediately.",
         },
         {
           question: "How much do I need to deposit to join?",
@@ -60,34 +60,34 @@ export const HelpPage: React.FC = () => {
             "You need to deposit enough to cover one full contribution amount plus a small buffer (typically 10-20% extra) when joining. This ensures commitment and protects other members.",
         },
         {
-          question: "Can I create my own circle?",
+          question: "Can I create my own ROSCA?",
           answer:
-            "Yes! Creating a private circle is free. Set the contribution amount ($1-$5,000), frequency (daily/weekly/monthly), and capacity (5-20 members). As creator, you always receive the first payout and pay 0% fees. Making your circle public costs $0.50.",
+            "Yes! Creating a private ROSCA is free. Set the contribution amount ($1-$5,000), frequency (daily/weekly/monthly), and capacity (5-20 members). As creator, you always receive the first payout and pay 0% fees. Making your ROSCA public costs $0.50.",
         },
         {
-          question: "What's the difference between private and public circles?",
+          question: "What's the difference between private and public ROSCAs?",
           answer:
-            "Private circles are free and only people you invite can join. Public circles cost $0.50 but are visible to all users, helping you fill the circle faster. Both work identically once active.",
+            "Private ROSCAs are free and only people you invite can join. Public ROSCAs cost $0.50 but are visible to all users, helping you fill the ROSCA faster. Both work identically once active.",
         },
         {
           question: "How is the payout order determined?",
           answer:
-            "Payout positions are assigned based on your reputation score when the circle starts. Circle creators always receive the first payout. Members with higher reputation get better positions.",
+            "Payout positions are assigned based on your reputation score when the ROSCA starts. ROSCA creators always receive the first payout. Members with higher reputation get better positions.",
         },
         {
           question: "What happens to my money while waiting?",
           answer:
-            "Your money is held securely in the smart contract until the circle completes. This ensures all payouts are fully funded and transparent.",
+            "Your money is held securely in the smart contract until the ROSCA completes. This ensures all payouts are fully funded and transparent.",
         },
         {
-          question: "What happens if a circle doesn't fill up?",
+          question: "What happens if a ROSCA doesn't fill up?",
           answer:
-            "Circles need 60% of max capacity to start within 7-14 days. If this isn't met, the circle becomes inactive and members can withdraw their principal completely.",
+            "ROSCAs need 60% of max capacity to start within 7-14 days. If this isn't met, the ROSCA becomes inactive and members can withdraw their principal completely.",
         },
         {
-          question: "Can I participate in multiple circles?",
+          question: "Can I participate in multiple ROSCAs?",
           answer:
-            "Yes! Join as many circles as you want, as long as you have sufficient funds for the required deposits.",
+            "Yes! Join as many ROSCAs as you want, as long as you have sufficient funds for the required deposits.",
         },
         {
           question: "What if I miss a payment?",
@@ -95,8 +95,8 @@ export const HelpPage: React.FC = () => {
             "The system sends reminders before the deadline. If you miss it, a 1% fee is deducted from your deposit, and your reputation score decreases slightly.",
         },
         {
-          question: "Can I withdraw before the circle ends?",
-          answer: "No. You can not exit an active circle.",
+          question: "Can I withdraw before the ROSCA ends?",
+          answer: "No. You can not exit an active ROSCA.",
         },
         {
           question: "How long does it take to receive my payout?",
@@ -116,7 +116,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "What are the early withdrawal fees?",
           answer:
-            "Fees decrease with progress: 1% at 0-24%, 0.6% at 25-49%, 0.3% at 50-74%, 0.1% at 75-99%, and 0% at 100% completion.",
+            "Fees decrease with progress: 1% at 0-24%, 0.6% at 25-49%, 0.3% at 50-74%, 0.25% at 75-99%, and 0.1% at 100% completion.",
         },
         {
           question: "Can I have multiple savings goals?",
@@ -136,7 +136,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "Are there any fees?",
           answer:
-            "We charge minimal fees: 1% on payouts ≤$1,000 (or flat $10 for larger payouts), $0.50 to make circles public, 1% late payment fee. All fees are clearly shown before you confirm.",
+            "We charge minimal fees: 1% on payouts ≤$1,000 (or flat $10 for larger payouts), $0.50 to make ROSCAs public, 1% late payment fee. All fees are clearly shown before you confirm.",
         },
         {
           question: "Is there a fee to send money externally?",
@@ -171,22 +171,22 @@ export const HelpPage: React.FC = () => {
         {
           question: "How does interest work?",
           answer:
-            "For personal savings goals, your money earns interest in secure savings accounts from the moment you deposit it. This interest is shared between you (90%) and the platform (10%). Savings circles focus on community saving and reputation building.",
+            "For personal savings goals, your money earns interest in secure savings accounts from the moment you deposit it. This interest is shared between you (90%) and the platform (10%). ROSCAs focus on community saving and reputation building.",
         },
         {
           question: "What is Performance Points?",
           answer:
-            "You earn +10 points for every on-time contribution. These determine your digital reputation score and unlock better payout positions in future circles. Late payments earn no points.",
+            "You earn +10 points for every on-time contribution. These determine your digital reputation score and unlock better payout positions in future ROSCAs. Late payments earn no points.",
         },
         {
           question: "How does my reputation score work?",
           answer:
-            "Your score is based on payment history (35%), completion rate (30%), time on platform (15%), circle variety (10%), and recent activity (10%). Higher scores unlock better payout positions and access to premium circles.",
+            "Your score is based on payment history (35%), completion rate (30%), time on platform (15%), ROSCA variety (10%), and recent activity (10%). Higher scores unlock better payout positions and access to premium ROSCAs.",
         },
         {
-          question: "What happens if I complete circles successfully?",
+          question: "What happens if I complete ROSCAs successfully?",
           answer:
-            "Your reputation improves, unlocking lower deposits, better payout positions, access to larger circles, and future borrowing opportunities.",
+            "Your reputation improves, unlocking lower deposits, better payout positions, access to larger ROSCAs, and future borrowing opportunities.",
         },
       ],
     },
@@ -215,7 +215,7 @@ export const HelpPage: React.FC = () => {
     >
       <SEO
         title="Help Center - Frequently Asked Questions"
-        description="Find answers to all your questions about Circlepot. Learn about savings circles, personal goals, deposits, withdrawals, and security."
+        description="Find answers to all your questions about Circlepot. Learn about ROSCAs, personal goals, deposits, withdrawals, and security."
       />
       <Navigation />
 

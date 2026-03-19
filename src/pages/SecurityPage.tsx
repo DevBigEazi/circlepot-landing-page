@@ -68,7 +68,7 @@ export const SecurityPage: React.FC = () => {
     >
       <SEO
         title="Security & Trust - Your Money, Your Control"
-        description="Bank-level security without the complexity. Circlepot uses identity-based access and verified code to keep your community savings safe."
+        description="Bank-level security without the complexity. Circlepot uses identity-based access and verified code to keep your ROSCAs safe."
       />
       <Navigation />
 

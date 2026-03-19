@@ -24,7 +24,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ colors }) => {
     },
     {
       step: "03",
-      title: "Join Savings Circles",
+      title: "Join ROSCAs",
       description: "Save with trusted community groups",
       icon: Users,
       color: colors.accent,

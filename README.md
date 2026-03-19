@@ -19,30 +19,31 @@ flowchart TD
 
     A6 --> B{User Choice}
 
-    subgraph C [2. SAVINGS CIRCLES JOURNEY]
-        B -- Create/Join Circle --> C1{Create or Join Circle?}
-
-        C1 -- Create --> C2[Create Circle<br>Manual Setup]
+    subgraph C [2. ROSCAs JOURNEY]
+        B -- Create/Join ROSCA --> C1{Create or Join ROSCA?}
+ 
+        C1 -- Create --> C2[Create ROSCA<br>Manual Setup]
         C2 --> C2_1{Choose Mode}
         C2_1 -- Standard --> C3
         C2_1 -- Yield --> C2_2[Collateral earns DeFi Interest] --> C3
-
+ 
         C3[Lock Collateral<br>Gasless via Thirdweb]
         C3 --> C4[Get Position #1<br>Share Invite Link]
         C4 --> C5_0{60% Capacity Met?}
-
+ 
         C1 -- Join --> C6[Browse or Use Invite Link]
         C6 --> C7[Review & Lock Collateral]
+        C6 --> C7[Review & Lock Collateral]
         C7 --> C5_0
-
+ 
         C5_0 -- No & Ultimatum Reached --> C5_DEAD[DEAD State<br>Bulk Liquidation of Principal]
         C5_0 -- Yes --> C5_VOTE{Voting Phase<br>Start vs Withdraw}
-
+ 
         C5_VOTE -- Withdraw Wins --> C5_DEAD
         C5_VOTE -- Start Wins --> C8[Assign Positions<br>Based on Reputation]
-        C8 --> C5[Circle Starts]
+        C8 --> C5[ROSCA Starts]
     end
-
+ 
     subgraph D [3. CONTRIBUTION CYCLE]
         C5 --> D1[Manual Contribution<br>User Initiated]
         D1 --> D2[Zero Gas Fees<br>EIP-7702 Sponsorship]
@@ -53,8 +54,8 @@ flowchart TD
         D4 --> D6{Round Completed?}
         D6 -- No --> D1
     end
-
-    subgraph E [4. CIRCLE PAYOUT]
+ 
+    subgraph E [4. ROSCA PAYOUT]
         D6 -- Yes --> E1[Your Turn for Payout?]
         E1 -- Yes --> E2[Automated Payout<br>1% Fee or $10 Flat]
         E2 --> E2_1{Yield Mode?}
@@ -62,7 +63,7 @@ flowchart TD
         E2_1 -- No --> E3
         E2_2 --> E3[💰 Instant USDm to Wallet]
         E3 --> E4[Reputation Boost]
-        E4 --> E5[Circle Progresses/Completes]
+        E4 --> E5[ROSCA Progresses/Completes]
         E1 -- No --> D1
     end
 

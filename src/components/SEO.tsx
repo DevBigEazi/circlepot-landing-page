@@ -11,8 +11,8 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = "Circlepot - Secure Community Savings",
-  description = "Join or create secure community savings circles. Transparent, automated, and built for your financial growth.",
+  title = "Circlepot - Secure ROSCAs",
+  description = "Join or create secure ROSCAs. Transparent, automated, and built for your financial growth.",
   image = "/src/assets/images/logo.png",
   url = "https://circlepot.xyz",
   faqData,

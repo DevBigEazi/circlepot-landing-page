@@ -25,7 +25,7 @@ export const PricingPage: React.FC = () => {
     >
       <SEO
         title="Pricing - Simple, Fair & Transparent Fees"
-        description="No hidden fees. Pay only when you succeed with Circlepot. See our clear fee structure for community savings and personal goals."
+        description="No hidden fees. Pay only when you succeed with Circlepot. See our clear fee structure for ROSCAs and personal goals."
       />
       <Navigation />
 
@@ -184,19 +184,19 @@ export const PricingPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                name: "Circle Payouts (≤$1,000)",
+                name: "ROSCA Payouts (≤$1,000)",
                 fee: "1%",
                 desc: "Fee on automated payouts",
               },
               {
-                name: "Circle Payouts (>$1,000)",
+                name: "ROSCA Payouts (>$1,000)",
                 fee: "$10",
                 desc: "Fixed fee for larger payouts",
               },
               {
-                name: "Public Circle Visibility",
+                name: "Public ROSCA Visibility",
                 fee: "$0.50",
-                desc: "One-time to make circle public",
+                desc: "One-time to make ROSCA public",
               },
               {
                 name: "External Transfer",
@@ -266,8 +266,8 @@ export const PricingPage: React.FC = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                "Creating private circles",
-                "Joining circles",
+                "Creating private ROSCAs",
+                "Joining ROSCAs",
                 "Account creation",
                 "Sending money to other users",
                 "Receiving payouts",

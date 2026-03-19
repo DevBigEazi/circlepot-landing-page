@@ -21,31 +21,31 @@ export const HowItWorksPage: React.FC = () => {
   const circleSteps = [
     {
       icon: Users,
-      title: "Join or Create a Circle",
+      title: "Join or Create a ROSCA",
       description:
-        "Pick a circle that matches your savings goal, or create your own with 5-20 members. Set the amount and frequency that works for you.",
+        "Pick a ROSCA that matches your savings goal, or create your own with 5-20 members. Set the amount and frequency that worked for you.",
     },
     {
       icon: CheckCircle,
       title: "Make Regular Contributions",
       description:
-        "Contribute the agreed amount each period. Build your reputation and ensure smooth payouts for the whole circle.",
+        "Contribute the agreed amount each period. Build your reputation and ensure smooth payouts for the whole ROSCA.",
     },
     {
       icon: TrendingUp,
       title: "Receive Your Payout",
       description:
-        "On your scheduled turn, receive the full pot. Your initial collateral deposit is returned once the full circle is completed.",
+        "On your scheduled turn, receive the full pot. Your initial collateral deposit is returned once the full ROSCA is completed.",
     },
   ];
 
   const reputationBenefits = [
     {
       title: "Better Payout Positions",
-      desc: "Get paid earlier in future circles",
+      desc: "Get paid earlier in future ROSCAs",
     },
     {
-      title: "Access to Premium Circles",
+      title: "Access to Premium ROSCAs",
       desc: "Join high-value saving groups",
     },
     { title: "Lower Requirements", desc: "Reduced deposit amounts over time" },
@@ -58,8 +58,8 @@ export const HowItWorksPage: React.FC = () => {
       style={{ backgroundColor: colors.background }}
     >
       <SEO
-        title="How It Works - Savings Circles & Personal Goals"
-        description="Learn how Circlepot's community savings circles and personal goals work. Build reputation, earn interest, and save securely."
+        title="How It Works - ROSCAs & Personal Goals"
+        description="Learn how Circlepot's ROSCAs and personal goals work. Build reputation, earn interest, and save securely."
       />
       <Navigation />
 
@@ -105,7 +105,7 @@ export const HowItWorksPage: React.FC = () => {
               className="text-4xl sm:text-7xl font-black tracking-tighter mb-6 leading-[0.9] text-balance"
               style={{ color: colors.text }}
             >
-              Understanding <br className="hidden sm:block" /> Savings Circles
+              Understanding <br className="hidden sm:block" /> ROSCAs
             </h2>
             <p
               className="text-lg sm:text-xl font-medium opacity-50 max-w-2xl mx-auto"
@@ -166,7 +166,7 @@ export const HowItWorksPage: React.FC = () => {
               className="text-3xl font-black mb-8"
               style={{ color: colors.text }}
             >
-              Real Example: 10-Person Weekly Circle
+              Real Example: 10-Person Weekly ROSCA
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -257,7 +257,7 @@ export const HowItWorksPage: React.FC = () => {
                     style={{ color: colors.text }}
                   >
                     Receive your payout (on your turn) + collateral return (at
-                    circle completion)
+                    ROSCA completion)
                   </div>
                 </div>
               </div>
@@ -391,8 +391,8 @@ export const HowItWorksPage: React.FC = () => {
                     status: "Making progress",
                   },
                   { progress: "50-74%", fee: "0.3%", status: "Halfway there" },
-                  { progress: "75-99%", fee: "0.1%", status: "Almost done" },
-                  { progress: "100%", fee: "0%", status: "Goal reached!" },
+                  { progress: "75-99%", fee: "0.25%", status: "Almost done" },
+                  { progress: "100%", fee: "0.1%", status: "Goal reached!" },
                 ].map((item, i) => (
                   <div
                     key={i}
@@ -517,17 +517,17 @@ export const HowItWorksPage: React.FC = () => {
                 {
                   factor: "Completion Rate",
                   weight: "30%",
-                  desc: "Finished circles",
+                  desc: "Finished ROSCAs",
                 },
                 {
                   factor: "Time Active",
                   weight: "15%",
-                  desc: "Months on platform",
+                  desc: "Months on ROSCAs"
                 },
                 {
-                  factor: "Circle Variety",
+                  factor: "ROSCA Variety",
                   weight: "10%",
-                  desc: "Different circles joined",
+                  desc: "Different ROSCAs joined",
                 },
                 {
                   factor: "Recent Activity",
@@ -659,7 +659,7 @@ export const HowItWorksPage: React.FC = () => {
                         className="text-sm font-bold opacity-40 mb-1"
                         style={{ color: colors.secondary }}
                       >
-                        Community Share
+                        Your Share
                       </div>
                       <div
                         className="text-2xl font-black"
@@ -799,7 +799,7 @@ export const HowItWorksPage: React.FC = () => {
                 className="font-medium opacity-60 leading-relaxed"
                 style={{ color: colors.text }}
               >
-                Circles have a fixed time to fill up (7-14 days). If a circle
+                ROSCAs have a fixed time to fill up (7-14 days). If a ROSCA
                 doesn't reach 60% capacity, it becomes "DEAD." Members can
                 instantly withdraw their full initial deposit without any fees.
               </p>

@@ -34,7 +34,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({
     {
       icon: Users,
       title: "Community Driven",
-      desc: "Join or create circles and save with friends and family or like-minded people globally",
+      desc: "Join or create ROSCAs and save with friends and family or like-minded people globally",
     },
     {
       icon: Key,

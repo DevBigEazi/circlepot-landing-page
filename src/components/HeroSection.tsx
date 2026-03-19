@@ -55,7 +55,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             style={{ color: colors.text }}
           >
             Deposit in 35+ currencies, save in Stable Digital Dollars, and earn
-            interest automatically. Community savings made simpler, transparent,
+            interest automatically. ROSCAs made simpler, transparent,
             and rewarding.
           </p>
 

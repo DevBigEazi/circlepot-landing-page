@@ -14,7 +14,7 @@ export const TermsPage: React.FC = () => {
     >
       <SEO
         title="Terms of Service - Usage Agreements"
-        description="Review the terms and conditions for using Circlepot. Understand your responsibilities and our commitment to secure community savings."
+        description="Review the terms and conditions for using Circlepot. Understand your responsibilities and our commitment to secure ROSCAs."
       />
       <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-32 sm:py-40">
