@@ -116,7 +116,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "What are the early withdrawal fees?",
           answer:
-            "Fees decrease with progress: 1% at 0-24%, 0.6% at 25-49%, 0.3% at 50-74%, 0.1% at 75-99%, and 0% at 100% completion.",
+            "Fees decrease with progress: 1% at 0-24%, 0.6% at 25-49%, 0.3% at 50-74%, 0.25% at 75-99%, and 0.1% at 100% completion.",
         },
         {
           question: "Can I have multiple savings goals?",
