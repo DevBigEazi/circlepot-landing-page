@@ -172,7 +172,7 @@ export const faqs: FAQ[] = [
   {
     question: "Are there any fees?",
     answer:
-      "We charge minimal fees: 1% on payouts ≤$1,000 (or flat $10 for larger payouts), $0.50 to make circles public, 1% late payment fee, $0.20 for external transfers to wallets/exchanges, and small penalties for early goal withdrawals (1.0% at 0-24% progress down to 0% at completion).",
+      "We charge minimal fees: 1% on payouts ≤$1,000 (or flat $10 for larger payouts), $0.50 to make circles public, 1% late payment fee, $0.20 for external transfers to wallets/exchanges, and small penalties for early goal withdrawals (1.0% at 0-24% progress down to 0.1% at completion).",
   },
   {
     question: "Is my money safe?",

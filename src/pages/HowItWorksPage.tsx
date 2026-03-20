@@ -215,7 +215,7 @@ export const HowItWorksPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between items-center py-3">
                     <span className="font-bold" style={{ color: colors.text }}>
-                      Platform Fee (1%)
+                      Platform Fee (1% - max $10)
                     </span>
                     <span
                       className="font-black text-xl"
@@ -391,8 +391,8 @@ export const HowItWorksPage: React.FC = () => {
                     status: "Making progress",
                   },
                   { progress: "50-74%", fee: "0.3%", status: "Halfway there" },
-                  { progress: "75-99%", fee: "0.1%", status: "Almost done" },
-                  { progress: "100%", fee: "0%", status: "Goal reached!" },
+                  { progress: "75-99%", fee: "0.25%", status: "Almost done" },
+                  { progress: "100%", fee: "0.1%", status: "Goal reached!" },
                 ].map((item, i) => (
                   <div
                     key={i}
