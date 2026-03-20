@@ -200,7 +200,7 @@ export const PricingPage: React.FC = () => {
               },
               {
                 name: "External Transfer",
-                fee: "$0.20",
+                fee: "$0.50",
                 desc: "To external wallets or exchanges",
               },
               {

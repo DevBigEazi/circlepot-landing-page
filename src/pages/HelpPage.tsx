@@ -141,7 +141,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "Is there a fee to send money externally?",
           answer:
-            "Yes, there's a flat $0.20 fee when you transfer funds to external exchanges or wallets. This helps cover platform costs while keeping it affordable.",
+            "Yes, there's a flat $0.50 fee when you transfer funds to external exchanges or wallets. This helps cover platform costs while keeping it affordable.",
         },
       ],
     },
