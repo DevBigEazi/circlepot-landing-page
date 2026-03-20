@@ -22,25 +22,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Structural background elements */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-4xl mx-auto text-center mb-16 lg:mb-24">
-          <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 border transition-colors duration-300"
-            style={{
-              backgroundColor: colors.surface,
-              borderColor: colors.border,
-            }}
-          >
-            <div
-              className="w-2 h-2 rounded-full animate-pulse"
-              style={{ backgroundColor: colors.primary }}
-            />
-            <span
-              className="font-medium text-xs sm:text-sm tracking-wide uppercase"
-              style={{ color: colors.textLight }}
-            >
-              Secure Digital Savings • Powered by Blockchain
-            </span>
-          </div>
-
           <h1
             className="text-5xl sm:text-7xl lg:text-9xl font-extrabold mb-6 tracking-tighter leading-[0.95] text-balance"
             style={{ color: colors.text }}
