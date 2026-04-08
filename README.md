@@ -76,7 +76,7 @@ flowchart TD
         F3 --> F4{Goal Completed?}
         F4 -- No --> F5{Early Withdrawal?}
         F5 -- No --> F3
-        F5 -- Yes --> F6[Apply Progress-Based Penalty<br>0.1% - 1.0%]
+        F5 -- Yes --> F6[Apply Progress-Based Withdrawal Fees<br>0.1% - 1.0%]
         F6 --> F7[Goal Principle + 90% Yield]
         F7 --> F9_Finished
         F4 -- Yes --> F8[Goal Payout + 90% Yield<br>+ Reputation Points]
