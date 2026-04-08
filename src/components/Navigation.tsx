@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import appLogo from "../assets/images/full-logo.png";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 import { useTheme } from "../context/ThemeContext";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 import { WaitlistModal } from "./WaitlistModal";
 import { Link, useLocation } from "react-router-dom";
 
@@ -22,23 +23,29 @@ export const Navigation: React.FC = () => {
   // Close menu when location changes
   useEffect(() => {
     setIsMenuOpen(false);
-    // Force direct scroll to top on path change
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [location.pathname]);
 
-  // Prevent scroll when menu is open
+  // Prevent background scroll when menu is open
+  useBodyScrollLock(isMenuOpen);
+
+  // Ensure menu closes when switching to desktop layout
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
-    } else {
-      document.body.style.overflow = "auto";
-      document.body.style.height = "auto";
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    const closeMenuOnDesktop = (event: MediaQueryListEvent) => {
+      if (event.matches) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (mediaQuery.matches && isMenuOpen) {
+      setIsMenuOpen(false);
     }
 
+    mediaQuery.addEventListener("change", closeMenuOnDesktop);
+
     return () => {
-      document.body.style.overflow = "auto";
-      document.body.style.height = "auto";
+      mediaQuery.removeEventListener("change", closeMenuOnDesktop);
     };
   }, [isMenuOpen]);
 

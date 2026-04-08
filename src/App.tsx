@@ -1,4 +1,4 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,15 +16,8 @@ import { ThemeProvider } from "./context/ThemeContext";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-
-  useLayoutEffect(() => {
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-    };
-
-    scrollToTop();
-    // Catch any late renders or browser scroll restoration logic
-    requestAnimationFrame(scrollToTop);
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
   }, [pathname]);
 
   return null;
