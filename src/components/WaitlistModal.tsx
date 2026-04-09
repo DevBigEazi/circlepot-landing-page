@@ -100,7 +100,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
       if (success) {
         setStep("otp");
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         success: false,
         message: "Failed to send verification code. Please try again.",
@@ -211,7 +211,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
           } else {
             throw new Error("Failed to save your details");
           }
-        } catch (error) {
+        } catch {
           setSubmitStatus({
             success: false,
             message:
@@ -226,7 +226,17 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
     if (account?.address && step === "otp") {
       submitToSheet();
     }
-  }, [account?.address, step, onClose]);
+  }, [
+    account?.address,
+    step,
+    onClose,
+    formData.fullName,
+    formData.email,
+    formData.country,
+    formData.hasUsedWeb3,
+    resetEmailFlow,
+    submitStatus?.success,
+  ]);
 
   // Close on Escape key press
   useEffect(() => {

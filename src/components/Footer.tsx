@@ -248,7 +248,7 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
             opacity: 0.3,
           }}
         >
-          <div>© {new Date().getFullYear()} Circlepot Global.</div>
+          <div>© {new Date().getFullYear()} Circlepot</div>
           <div className="flex gap-8">
             <span>Audited Smart Contract</span>
             <span>Non-Custodial</span>
