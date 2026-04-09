@@ -7,18 +7,15 @@
 
   html {
     overflow-x: hidden;
-    height: 100%;
   }
 
   body {
     @apply antialiased selection:bg-emerald-500/30 font-['Outfit',sans-serif];
-    text-rendering: optimizeLegibility;
     overflow-x: hidden;
     width: 100%;
     min-height: 100%;
     min-height: -webkit-fill-available;
     position: relative;
-    overscroll-behavior-y: none;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -38,7 +35,7 @@
   }
 
   .bento-card {
-    @apply rounded-4xl border transition-all duration-700 hover:shadow-2xl overflow-hidden;
+    @apply rounded-4xl border transition-[transform,box-shadow,border-color,background-color] duration-700 hover:shadow-2xl overflow-hidden;
   }
 
   .text-balance {

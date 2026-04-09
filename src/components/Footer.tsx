@@ -40,6 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               <img
                 src={appLogo}
                 alt="Circlepot logo"
+                loading="lazy"
                 className="h-14 w-auto mb-8"
               />
             </Link>
@@ -199,16 +200,19 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
               <img
                 src={icons.avaxLogo}
                 alt="Avalanche"
+                loading="lazy"
                 className="h-6 w-auto"
               />
               <img
                 src={icons.dynamicLogo}
                 alt="Dynamic"
+                loading="lazy"
                 className="h-6 w-auto"
               />
               <img
                 src={icons.zerodevLogo}
                 alt="ZeroDev"
+                loading="lazy"
                 className="h-6 w-auto"
               />
             </div>
@@ -244,9 +248,9 @@ export const Footer: React.FC<FooterProps> = ({ colors }) => {
             opacity: 0.3,
           }}
         >
-          <div>© 2025 Circlepot Global.</div>
+          <div>© {new Date().getFullYear()} Circlepot Global.</div>
           <div className="flex gap-8">
-            <span>Verified Smart Contract</span>
+            <span>Audited Smart Contract</span>
             <span>Non-Custodial</span>
           </div>
         </div>

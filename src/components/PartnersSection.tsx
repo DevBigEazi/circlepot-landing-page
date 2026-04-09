@@ -74,6 +74,7 @@ export const PartnersSection: React.FC<PartnersSectionProps> = ({ colors }) => {
                   <img
                     src={tech.logo}
                     alt={tech.name}
+                    loading="lazy"
                     className="w-12 h-12 object-contain relative z-10 opacity-80 group-hover:opacity-100 transition-opacity"
                   />
                 </div>
@@ -141,6 +142,7 @@ export const PartnersSection: React.FC<PartnersSectionProps> = ({ colors }) => {
                     <img
                       src={partner.logo}
                       alt={partner.name}
+                      loading="lazy"
                       className="w-10 h-10 object-contain relative z-10 transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
