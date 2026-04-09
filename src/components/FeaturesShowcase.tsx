@@ -121,6 +121,7 @@ export const FeaturesShowcase: React.FC<FeaturesShowcaseProps> = ({
                 <img
                   src={isDark ? showcaseLight : showcaseDark}
                   alt="Circlepot App Showcase"
+                  loading="lazy"
                   className="w-full h-auto object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500"
                 />
               </div>

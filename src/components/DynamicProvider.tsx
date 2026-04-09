@@ -47,6 +47,7 @@ export default function DynamicProvider({
           },
           hideEmbeddedWalletUIs: true,
           hideEmbeddedWalletTransactionUIs: true,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } as any
       }
     >

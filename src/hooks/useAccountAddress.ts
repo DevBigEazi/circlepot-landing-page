@@ -34,6 +34,7 @@ export const useAccountAddress = () => {
         // 1. Check if we already have it in additionalAddresses (fast path)
         let foundSA: string | undefined;
         wallets.forEach((w) => {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const found = (w as any).additionalAddresses?.find(
             (a: { type: string; address: string }) =>
               a.type === "smart-wallet" || a.type === "account-abstraction",

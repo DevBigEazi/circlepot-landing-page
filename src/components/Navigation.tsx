@@ -237,7 +237,7 @@ export const Navigation: React.FC = () => {
               className="text-sm font-bold uppercase tracking-widest"
               style={{ color: colors.text }}
             >
-              © 2025 Circlepot Global
+              © {new Date().getFullYear()} Circlepot Global
             </p>
           </div>
         </div>

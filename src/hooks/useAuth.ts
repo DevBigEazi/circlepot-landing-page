@@ -10,7 +10,7 @@ import { useAccountAddress } from "./useAccountAddress";
 export interface AuthError {
   code: string;
   message: string;
-  details?: any;
+  details?: unknown;
 }
 
 export interface AuthState {
@@ -69,11 +69,11 @@ export const useGoogleAuth = () => {
       setIsLoading(true);
       clearError();
       await signInWithSocialAccount(ProviderEnum.Google);
-    } catch (err: any) {
+    } catch (err) {
       console.error("Google login error:", err);
       setError({
         code: "GOOGLE_AUTH_ERROR",
-        message: err.message || "Failed to connect with Google",
+        message: (err as Error).message || "Failed to connect with Google",
         details: err,
       });
     } finally {
@@ -128,11 +128,11 @@ export const useEmailAuth = (): UseEmailAuthReturn => {
         await connectWithEmail(email);
         setEmailSent(true);
         return true;
-      } catch (err: any) {
+      } catch (err) {
         console.error("Email OTP error:", err);
         setError({
           code: "EMAIL_SEND_ERROR",
-          message: err.message || "Failed to send verification code",
+          message: (err as Error).message || "Failed to send verification code",
           details: err,
         });
         return false;
@@ -150,11 +150,11 @@ export const useEmailAuth = (): UseEmailAuthReturn => {
         clearError();
         await verifyOneTimePassword(verificationCode);
         return true;
-      } catch (err: any) {
+      } catch (err) {
         console.error("OTP verification error:", err);
         setError({
           code: "INVALID_CODE",
-          message: err.message || "Invalid or expired verification code",
+          message: (err as Error).message || "Invalid or expired verification code",
           details: err,
         });
         return false;
