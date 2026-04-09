@@ -26,7 +26,7 @@ export const Home: React.FC = () => {
     >
       <SEO
         title="Circlepot - Secure & Transparent Community Savings"
-        description="The modern way to save together. Join community savings circles, earn interest, and build your digital reputation with Circlepot."
+        description="The modern way to save together. Join community savings circles, earn interest, and build your digital Credit Score with Circlepot."
         faqData={faqs}
       />
       <Navigation />

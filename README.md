@@ -39,7 +39,7 @@ flowchart TD
         C5_0 -- Yes --> C5_VOTE{Voting Phase<br>Start vs Withdraw}
 
         C5_VOTE -- Withdraw Wins --> C5_DEAD
-        C5_VOTE -- Start Wins --> C8[Assign Positions<br>Based on Reputation]
+        C5_VOTE -- Start Wins --> C8[Assign Positions<br>Based on Credit Score]
         C8 --> C5[Circle Starts]
     end
 
@@ -48,7 +48,7 @@ flowchart TD
         D1 --> D2[Zero Gas Fees<br>EIP-7702 Sponsorship]
         D2 --> D3{On-Time?}
         D3 -- Yes --> D4[Earn Performance Points]
-        D3 -- Late --> D5[Late Fee Charged<br>Reputation Hit]
+        D3 -- Late --> D5[Late Fee Charged<br>Credit Score Hit]
         D5 --> D4
         D4 --> D6{Round Completed?}
         D6 -- No --> D1
@@ -61,7 +61,7 @@ flowchart TD
         E2_1 -- Yes --> E2_2[90/10 Yield Split<br>Community + Owner Share]
         E2_1 -- No --> E3
         E2_2 --> E3[💰 Instant USDm to Wallet]
-        E3 --> E4[Reputation Boost]
+        E3 --> E4[Credit Score Boost]
         E4 --> E5[Circle Progresses/Completes]
         E1 -- No --> D1
     end
@@ -76,10 +76,10 @@ flowchart TD
         F3 --> F4{Goal Completed?}
         F4 -- No --> F5{Early Withdrawal?}
         F5 -- No --> F3
-        F5 -- Yes --> F6[Apply Progress-Based Penalty<br>0.1% - 1.0%]
+        F5 -- Yes --> F6[Apply Progress-Based Withdrawal Fees<br>0.1% - 1.0%]
         F6 --> F7[Goal Principle + 90% Yield]
         F7 --> F9_Finished
-        F4 -- Yes --> F8[Goal Payout + 90% Yield<br>+ Reputation Points]
+        F4 -- Yes --> F8[Goal Payout + 90% Yield<br>+ Credit Score]
         F8 --> F9_Finished[Goal Achieved!]
     end
 
@@ -90,7 +90,7 @@ flowchart TD
         G4[🗳️ Democratic Voting System]
         G5[⛽ Sponsored Gas EIP-7702]
         G6[🔒 Collateral Security]
-        G7[⭐ Reputation Scoring]
+        G7[⭐ Credit Scoring]
         G8[🏦 Celo Ecosystem On/Off-Ramps]
     end
 

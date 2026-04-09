@@ -44,11 +44,6 @@ export const HowItWorksPage: React.FC = () => {
       title: "Better Payout Positions",
       desc: "Get paid earlier in future circles",
     },
-    {
-      title: "Access to Premium Circles",
-      desc: "Join high-value saving groups",
-    },
-    { title: "Lower Requirements", desc: "Reduced deposit amounts over time" },
     { title: "Future Loan Access", desc: "Unlock borrowing opportunities" },
   ];
 

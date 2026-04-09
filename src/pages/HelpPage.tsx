@@ -52,7 +52,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "How do I join a circle?",
           answer:
-            "Browse available circles or join via an invitation link. You'll need to deposit one contribution amount plus a small buffer to join. You build your reputation immediately.",
+            "Browse available circles or join via an invitation link. You'll need to deposit one contribution amount plus a small buffer to join. You build your Credit Score immediately.",
         },
         {
           question: "How much do I need to deposit to join?",
@@ -72,7 +72,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "How is the payout order determined?",
           answer:
-            "Payout positions are assigned based on your reputation score when the circle starts. Circle creators always receive the first payout. Members with higher reputation get better positions.",
+            "Payout positions are assigned based on your Credit Score when the circle starts. Circle creators always receive the first payout. Members with higher Credit Score get better positions.",
         },
         {
           question: "What happens to my money while waiting?",
@@ -92,7 +92,7 @@ export const HelpPage: React.FC = () => {
         {
           question: "What if I miss a payment?",
           answer:
-            "The system sends reminders before the deadline. If you miss it, a 1% fee is deducted from your deposit, and your reputation score decreases slightly.",
+            "The system sends reminders before the deadline. If you miss it, a 1% fee is deducted from your deposit, and your Credit Score decreases slightly.",
         },
         {
           question: "Can I withdraw before the circle ends?",
@@ -166,27 +166,27 @@ export const HelpPage: React.FC = () => {
       ],
     },
     {
-      name: "Interest & Reputation",
+      name: "Interest & Credit Score",
       faqs: [
         {
           question: "How does interest work?",
           answer:
-            "For personal savings goals, your money earns interest in secure savings accounts from the moment you deposit it. This interest is shared between you (90%) and the platform (10%). Savings circles focus on community saving and reputation building.",
+            "For personal savings goals, your money earns interest in secure savings accounts from the moment you deposit it. This interest is shared between you (90%) and the platform (10%). Savings circles focus on community saving and Credit Score building.",
         },
         {
           question: "What is Performance Points?",
           answer:
-            "You earn +10 points for every on-time contribution. These determine your digital reputation score and unlock better payout positions in future circles. Late payments earn no points.",
+            "You earn +10 points for every on-time contribution. These determine your credit score and unlock better payout positions in future circles. Late payments earn no points.",
         },
         {
-          question: "How does my reputation score work?",
+          question: "How does my Credit Score work?",
           answer:
             "Your score is based on payment history (35%), completion rate (30%), time on platform (15%), circle variety (10%), and recent activity (10%). Higher scores unlock better payout positions and access to premium circles.",
         },
         {
           question: "What happens if I complete circles successfully?",
           answer:
-            "Your reputation improves, unlocking lower deposits, better payout positions, access to larger circles, and future borrowing opportunities.",
+            "Your Credit Score improves, unlocking lower deposits, better payout positions, access to larger circles, and future borrowing opportunities.",
         },
       ],
     },
